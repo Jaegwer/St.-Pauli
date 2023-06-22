@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+	box-sizing: border-box;
+}
+nav{
+	background-color: #0A0A0A;
+	color: #ffffff
+
+}
+#search-box::placeholder {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002";
+    color: #6F6F6F;
+  }
+  #search-box{
+	color: black;
+  }
+.main-content{
+	background-color: #121212;
+}
+.bg-text {
+	font-size: 7.3vw;
+}
+i {
+	color: #ffffff;
+}
+.socials span{
+	color: #ffffff;
+}
+footer p{
+	color: #C1C1C1;
+}
+footer h4{
+	color: #FFFFFF;
+}
+.side-content p{
+	font-size: 1.5rem;
+}
+.sm-text{
+	font-size: 0.6rem;
+}
+.summary p{
+	color: #797979;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
+.mobile span {
+	font-size: 0.7rem;
+}
+.mobile-shop{
+	font-size: 2.1vw;
+}
+.impressium-content{
+	background-color: #121212;
+}
+.impressium-content p{
+	color: #D6D6D6;
+}
+.impressium-content h2{
+	color: #FFFFFF;
+	font-size: 1.4rem;
+}

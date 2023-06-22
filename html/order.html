@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<title>Document</title>
+</head>
+<header>
+	<div class="text-center bg-red-600 text-white">
+		<p>GRATIS VERSAND AB EINEN BESTELLWERT VON 60 €</p>
+	</div>
+	<nav class="grid grid-cols-2 gap-36 ">
+		<div class="md:hidden  col-span-2">
+			<ul class="flex justify-between items-center p-2">
+				<li class="items-center flex"><button type="button" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+						<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					<select class="w-20 bg-gray-700 text-white text-center" name="" id="">
+						<option value="">DE</option>
+						<option value="">EN</option>
+					</select>
+				</li>
+				<li>
+					<img src="../assets/images/Totenkopf_Weiss.png" alt="">
+				</li>
+				<li>
+					<a href="">
+						<i class="fas fa-shopping-cart fa-2x"></i>
+					</a>
+				</li>
+			</ul>
+
+			<div>
+
+			</div>
+		</div>
+
+		<div class="m-5 hidden md:block">
+			<ul class="flex justify-around items-end">
+				<li>
+					<img src="../assets/images/Totenkopf_Weiss.png" alt="">
+				</li>
+				<li>
+					<a href="">NEU</a>
+				</li>
+				<li>
+					<a href="">BEKLEIDUNG</a>
+				</li>
+				<li>
+					<a href="">FANARTIKEL</a>
+				</li>
+				<li>
+					<a href="">THEMENWELTEN</a>
+				</li>
+				<li class="text-red-600">
+					<a href="">SALE</a>
+				</li>
+			</ul>
+		</div>
+		<div class="m-5 hidden md:block">
+			<ul class="flex justify-evenly  items-center text-black">
+				<li>
+					<input class="w-80" id="search-box" placeholder="&#xf002; Wonach Suchst Du?" type="text">
+				</li>
+				<li>
+					<select class="w-20 bg-gray-700 text-white text-center" name="" id="">
+						<option value="">DE</option>
+						<option value="">EN</option>
+					</select>
+				</li>
+				<li>
+					<a href=""><i class="far fa-user-circle fa-2x"></i>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<i class="fas fa-shopping-cart fa-2x"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+<body>
+	<div class="main-content">
+		<div class="grid grid-cols-2">
+			<div class="relative mx-auto col-span-2 md:col-span-1">
+				<img src="../assets/images/order.png" alt="">
+				<button class="absolute top-0 left-0">
+					<img class="bg-black p-2 mt-5" src="../assets/images/back.png" alt="">
+					<i class="far fa-heart mt-5 bg-gray-500 p-3 fa-2x"></i>
+				</button>
+			</div>
+			<div class="side-content mt-12 col-span-2 md:col-span-1">
+				<div class=" grid grid-cols-5 ">
+					<div class="text-white col-start-1 md:col-start-2 col-span-3">
+						<p>TRIKOT AKAB BRAUN</p>
+						<p>ab 69,95 € <small class="text-sm text-zinc-700">*inkl. MwSt., Preis zzgl.
+								Lieferkosten</small></p>
+					</div>
+					<div class="col-start-5 ">
+						<img class="md:w-auto w-3/4 hidden md:block" src="../assets/images/diiy.png" alt="">
+						<img class="md:hidden w-3/4 block" src="../assets/images/Bild 71.png" alt="">
+					</div>
+					<div class="hidden md:block text-white col-start-2 col-span-3 mt-5">
+						<p>Größe auswählen</p>
+						<ul>
+							<li>
+								<button class="px-3 bg-red-800  border-2 border-gray-900">S</button>
+								<button class="px-3 bg-zinc-800  border-2 border-gray-900">M</button>
+								<button class=" px-3  bg-zinc-800 border-2 border-gray-900">
+
+									L</button>
+								<button class="px-3 bg-zinc-800 border-2 border-gray-900">XL</button>
+								<button class="px-3 bg-zinc-800 border-2 border-gray-900">XXL</button>
+								<span><small class=" text-zinc-700">Hier klicken zur Größentabelle</small>
+								</span>
+							</li>
+						</ul>
+
+					</div>
+					<div class="mt-5 hidden md:block">
+						<img src="../assets/images/Bild 71.png" alt="">
+					</div>
+					<div class="md:hidden text-zinc-700 text-sm block col-start-4 col-span-2 whitespace-nowrap">
+						<small>Hier klicken zur Größentabelle</small>
+					</div>
+					<div class="md:hidden block col-span-5 col-start-1 mr-0 mt-8">
+						<select class="w-full p-2 text-white bg-zinc-800" name="" id="">
+							<option value="">Größe auswählen</option>
+						</select>
+					</div>
+					<div class="md:col-start-2 md:col-span-4 md:mr-12 col-span-5 col-start-1 mr-0 mt-8">
+						<select class="w-full p-2 text-white bg-zinc-800" name="" id="">
+							<option value="">
+								Logo hinzufügen
+							</option>
+						</select>
+					</div>
+					<div class="md:col-start-2 md:col-span-4 md:mr-12 col-span-5 col-start-1 mr-0 mt-8">
+						<select class="w-full p-2 text-white bg-zinc-800" name="" id="">
+							<option value="">
+								Spielernamen und Nummer hinzufügen
+							</option>
+						</select>
+					</div>
+					<div class="hidden md:block col-start-2 mt-8">
+						<p class="text-white">Anzahl: 1</p>
+						<div class="w-24 p-2 bg-zinc-800 text-white border-2 border-zinc-500 flex justify-around">
+							<button>-</button>
+							<span>1</span>
+							<button>+</button>
+						</div>
+					</div>
+					<div class="flex md:grid col-span-3 col-start-1 md:col-start-4 md:col-span-2 text-white text-center whitespace-nowrap mt-12">
+						<p>Insgesamt&nbsp;&nbsp; 99,99 €</p>
+						<p><small class="text-sm text-zinc-700">*inkl. MwSt., Preis zzgl. Lieferkosten</small></p>
+					</div>
+					<div class="md:col-start-2 md:col-span-4 md:mr-12 col-span-5 col-start-1 mr-0 mt-8">
+						<button class="p-4 bg-red-800 text-white w-full">
+							ZUM WARENKORB HINZUFÜGEN
+						</button>
+					</div>
+					<div class="col-start-2 md:col-span-4 col-span-3 mt-8">
+						<ul class="flex justify-center">
+							<li>
+								<img src="../assets/images/paypalorder.png" alt="">
+							</li>
+							<li>
+								<img src="../assets/images/sofort.png" alt="">
+							</li>
+							<li>
+								<img src="../assets/images/visaorder.png" alt="">
+							</li>
+							<li>
+								<img src="../assets/images/amazonpay.png" alt="">
+							</li>
+						</ul>
+					</div>
+					<div class="md:col-start-2 md:col-span-4  col-span-5 col-start-1 mr-0 mt-8">
+						<div class="border-2 border-gray-600 bg-zinc-800 text-white p-2 md:mr-12 mr-0">
+							<p>
+								Artikelbeschreibung
+							</p>
+							<br>
+							<span class="text-zinc-500">
+								Warum Mann bei uns die erste Kategorie ist? Wissen wir auch nicht. Aber hier findest du alles sorgsam sortiert nach deinen FC St. Pauli Wünschen. <br><br> Totenkopf Shirts aller Farben, Themenshirts rund um den besten Club der Welt, Kollektionen, kreiert im Herzen der Stadt und dazu all die Accessoires für den Alltag und zu Hause, die Fans, St. Pauli Sympathisanten oder auch nur Interessierte gerne haben, gerne haben wollen oder dringend brauchen. <br><br> Die FC St. Pauli Welt für Oberkörper und Fuß, für Kopf und Hals, für Arm und Finger, das St. Pauli-alles-Drin-Wohlfühlprogramm.
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mt-12 ">
+			<h3 class="text-center text-white text-4xl">
+				Mehr aus der Kollektion
+			</h3>
+			<ul class="flex justify-around">
+				<li>
+					<div class="card-img xl:w-64 w-48">
+						<div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+							<img class="w-full" src="../assets/images/category-white.png" alt="Image">
+							<button class="hidden md:block absolute md:top-0  right-0  bg-zinc-950">
+								<i class="far fa-heart m-2"></i>
+							</button>
+							<button class="md:hidden absolute bottom-0  right-0  bg-zinc-950">
+								<i class="far fa-heart m-2"></i>
+							</button>
+							<div class="md:hidden block absolute top-0 left-0 bg-black text-white"><span class="m-1">AUSVERKAUFT</span>
+							</div>
+							<ul
+								class="md:flex hidden absolute text-white bottom-0 left-0 w-full bg-black bg-opacity-50 py-4 flex flex-col items-center justify-center">
+								<span>Größe auswählen</span>
+								<li>
+									<button class="px-3 bg-red-800  border-2 border-gray-900">S</button>
+									<button class="px-3 bg-gray-900  border-2 border-gray-900">M</button>
+									<button class="relative px-3 text-gray-600 bg-gray-900 border-2 border-gray-900">
+										<span
+											class="absolute top-0 right-1 w-full h-0.5 bg-gray-500 transform -rotate-45 origin-top-right"></span>
+										L</button>
+									<button class="px-3 bg-gray-900 border-2 border-gray-900">XL</button>
+									<button class="px-3 bg-gray-900 border-2 border-gray-900">XXL</button>
+								</li>
+							</ul>
+						</div>
+						<div class="mt-2 md:text-base text-sm text-white">
+							<div class="font-bold whitespace-nowrap  mb-2">T-SHIRT FCSP OFFUG SCHWARZ </div>
+							<span class=" text-base">29.99 €</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card-img xl:w-64 w-48">
+						<div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+							<img class="w-full" src="../assets/images/category-black.png" alt="Image">
+							<button class="hidden md:block absolute top-0 right-0 bg-zinc-950">
+								<i class="far fa-heart m-2"></i>
+							</button>
+							<button class="md:hidden absolute bottom-0  right-0  bg-zinc-950">
+								<i class="far fa-heart m-2"></i>
+							</button>
+							<div class="absolute top-0 left-0 bg-green-700 text-white"><span class="m-1">NEU</span>
+							</div>
+						</div>
+						<div class="px-6 py-4 text-white">
+							<div class="font-bold  whitespace-nowrap mb-2">T-SHIRT FCSP OFFUG SCHWARZ </div>
+							<span class=" text-base">29.99 €</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card-img xl:w-64 w-48 hidden md:flex">
+						<div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+							<img class="w-full" src="../assets/images/category-double.png" alt="Image">
+
+						</div>
+
+					</div>
+				</li>
+				<li>
+					<div class="card-img w-64 hidden xl:block">
+						<div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+							<img class="w-full" src="../assets/images/category-brown.png" alt="Image">
+							<button class="absolute top-0 right-0 bg-zinc-950">
+								<i class="far fa-heart m-2"></i>
+							</button>
+							<div class="absolute top-0 left-0 bg-red-700 text-white"><span class="m-1">SALE</span>
+							</div>
+							<ul
+								class="absolute text-white bottom-0 left-0 w-full bg-black bg-opacity-50 py-4 flex flex-col items-center justify-center">
+								<span>Größe auswählen</span>
+								<li>
+									<button class="px-3 bg-red-800  border-2 border-gray-900">S</button>
+									<button class="px-3 bg-gray-900  border-2 border-gray-900">M</button>
+									<button class="relative px-3 text-gray-600 bg-gray-900 border-2 border-gray-900">
+										<span
+											class="absolute top-0 right-1 w-full h-0.5 bg-gray-500 transform -rotate-45 origin-top-right"></span>
+										L</button>
+									<button class="px-3 bg-gray-900 border-2 border-gray-900">XL</button>
+									<button class="px-3 bg-gray-900 border-2 border-gray-900">XXL</button>
+								</li>
+							</ul>
+						</div>
+						<div class="px-6 py-4 text-white">
+							<div class="font-bold  whitespace-nowrap mb-2">T-SHIRT FCSP OFFUG SCHWARZ </div>
+							<span class=" text-red-700">19.99 €</span>
+							<span class="line-through text-gray-500">29.99 €</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card-img w-64 hidden xl:block">
+						<div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+							<img class="w-full" src="../assets/images/category-white.png" alt="Image">
+							<button class="absolute top-0 right-0 bg-zinc-950">
+								<i class="far fa-heart m-2"></i>
+							</button>
+
+							<ul
+								class="absolute text-white bottom-0 left-0 w-full bg-black bg-opacity-50 py-4 flex flex-col items-center justify-center">
+								<span>Größe auswählen</span>
+								<li>
+									<button class="px-3 bg-red-800  border-2 border-gray-900">S</button>
+									<button class="px-3 bg-gray-900  border-2 border-gray-900">M</button>
+									<button class="relative px-3 text-gray-600 bg-gray-900 border-2 border-gray-900">
+										<span
+											class="absolute top-0 right-1 w-full h-0.5 bg-gray-500 transform -rotate-45 origin-top-right"></span>
+										L</button>
+									<button class="px-3 bg-gray-900 border-2 border-gray-900">XL</button>
+									<button class="px-3 bg-gray-900 border-2 border-gray-900">XXL</button>
+								</li>
+							</ul>
+						</div>
+						<div class="px-6 py-4 text-white">
+							<div class="font-bold  whitespace-nowrap mb-2">T-SHIRT FCSP OFFUG SCHWARZ </div>
+							<span class=" text-base">29.99 €</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="mt-12">
+			<h3 class="text-center text-white text-4xl">
+				Unsere Bestseller
+			</h3>
+			<ul class="flex justify-around">
+				<li>
+					<div class="card-img xl:w-64 w-48">
+						<div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+							<img class="w-full" src="../assets/images/category-white.png" alt="Image">
+							<button class="hidden md:block absolute md:top-0  right-0  bg-zinc-950">
+								<i class="far fa-heart m-2"></i>
+							</button>
+							<button class="md:hidden absolute bottom-0  right-0  bg-zinc-950">
+								<i class="far fa-heart m-2"></i>
+							</button>
+
+							<ul
+								class="md:flex hidden absolute text-white bottom-0 left-0 w-full bg-black bg-opacity-50 py-4 flex flex-col items-center justify-center">
+								<span>Größe auswählen</span>
+								<li>
+									<button class="px-3 bg-red-800  border-2 border-gray-900">S</button>
+									<button class="px-3 bg-gray-900  border-2 border-gray-900">M</button>
+									<button class="relative px-3 text-gray-600 bg-gray-900 border-2 border-gray-900">
+										<span
+											class="absolute top-0 right-1 w-full h-0.5 bg-gray-500 transform -rotate-45 origin-top-right"></span>
+										L</button>
+									<button class="px-3 bg-gray-900 border-2 border-gray-900">XL</button>
+									<button class="px-3 bg-gray-900 border-2 border-gray-900">XXL</button>
+								</li>
+							</ul>
+						</div>
+						<div class="mt-2 md:text-base text-sm text-white">
+							<div class="font-bold whitespace-nowrap  mb-2">T-SHIRT FCSP OFFUG SCHWARZ </div>
+							<span class=" text-base">29.99 €</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card-img xl:w-64 w-48 ">
+						<div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+							<img class="w-full" src="../assets/images/category-black.png" alt="Image">
+							<button class="hidden md:block absolute md:top-0  right-0  bg-zinc-950">
+								<i class="far fa-heart m-2"></i>
+							</button>
+							<button class="md:hidden absolute bottom-0  right-0  bg-zinc-950">
+								<i class="far fa-heart m-2"></i>
+							</button>
+							<div class="absolute top-0 left-0 bg-green-700 text-white"><span class="m-1">NEU</span>
+							</div>
+						</div>
+						<div class="mt-2 md:text-base text-sm text-white">
+							<div class="font-bold whitespace-nowrap  mb-2">T-SHIRT FCSP OFFUG SCHWARZ </div>
+							<span class=" text-base">29.99 €</span>
+						</div>
+					</div>
+				</li>
+				<li class="hidden md:block">
+					<div class="card-img w-64">
+						<div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+							<img class="w-full" src="../assets/images/category-double.png" alt="Image">
+
+						</div>
+
+					</div>
+				</li>
+				<li class="hidden md:block">
+					<div class="card-img w-64">
+						<div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+							<img class="w-full" src="../assets/images/category-brown.png" alt="Image">
+							<button class="absolute top-0 right-0 bg-zinc-950">
+								<i class="far fa-heart m-2"></i>
+							</button>
+							<div class="absolute top-0 left-0 bg-red-700 text-white"><span class="m-1">SALE</span>
+							</div>
+							<ul
+								class="absolute text-white bottom-0 left-0 w-full bg-black bg-opacity-50 py-4 flex flex-col items-center justify-center">
+								<span>Größe auswählen</span>
+								<li>
+									<button class="px-3 bg-red-800  border-2 border-gray-900">S</button>
+									<button class="px-3 bg-gray-900  border-2 border-gray-900">M</button>
+									<button class="relative px-3 text-gray-600 bg-gray-900 border-2 border-gray-900">
+										<span
+											class="absolute top-0 right-1 w-full h-0.5 bg-gray-500 transform -rotate-45 origin-top-right"></span>
+										L</button>
+									<button class="px-3 bg-gray-900 border-2 border-gray-900">XL</button>
+									<button class="px-3 bg-gray-900 border-2 border-gray-900">XXL</button>
+								</li>
+							</ul>
+						</div>
+						<div class="px-6 py-4 text-white">
+							<div class="font-bold  whitespace-nowrap mb-2">T-SHIRT FCSP OFFUG SCHWARZ </div>
+							<span class=" text-red-700">19.99 €</span>
+							<span class="line-through text-gray-500">29.99 €</span>
+						</div>
+					</div>
+				</li>
+				<li class="hidden md:block">
+					<div class="card-img w-64">
+						<div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+							<img class="w-full" src="../assets/images/category-white.png" alt="Image">
+							<button class="absolute top-0 right-0 bg-zinc-950">
+								<i class="far fa-heart m-2"></i>
+							</button>
+
+							<ul
+								class="absolute text-white bottom-0 left-0 w-full bg-black bg-opacity-50 py-4 flex flex-col items-center justify-center">
+								<span>Größe auswählen</span>
+								<li>
+									<button class="px-3 bg-red-800  border-2 border-gray-900">S</button>
+									<button class="px-3 bg-gray-900  border-2 border-gray-900">M</button>
+									<button class="relative px-3 text-gray-600 bg-gray-900 border-2 border-gray-900">
+										<span
+											class="absolute top-0 right-1 w-full h-0.5 bg-gray-500 transform -rotate-45 origin-top-right"></span>
+										L</button>
+									<button class="px-3 bg-gray-900 border-2 border-gray-900">XL</button>
+									<button class="px-3 bg-gray-900 border-2 border-gray-900">XXL</button>
+								</li>
+							</ul>
+						</div>
+						<div class="px-6 py-4 text-white">
+							<div class="font-bold  whitespace-nowrap mb-2">T-SHIRT FCSP OFFUG SCHWARZ </div>
+							<span class=" text-base">29.99 €</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="main-content socials md:hidden">
+			<div class="relative ">
+				<img class="mx-auto" src="../assets/images/pauli-newsletter2.jpg" alt="">
+				<div class="absolute md:bottom-0 bottom-4  flex items-center justify-center w-full">
+					<input placeholder="Trage Deine E-Mail-Adresse ein" type="email">
+				</div>
+			</div>
+			<div class="relative">
+				<p class="bg-text text-gray-700  text-center">INSTAGRAM SOCIAL MEDIA</p>
+				<div class="text-sm md:text-3xl absolute bottom-0 left-0 w-full py-4 md:py-16 flex  items-center justify-center">
+					<i class="fab fa-instagram"></i>
+					<span>#DIESTRASSETRAEGTSTPAULI</span>
+				</div>
+			</div>
+			<ul class="flex justify-around">
+				<li>
+					<img src="../assets/images/socialcarousel1.png" alt="">
+				</li>
+				<li>
+					<img src="../assets/images/socialcarousel2.png" alt="">
+				</li>
+				<li>
+					<img src="../assets/images/socialcarousel3.png" alt="">
+				</li>
+				<li class="md:flex hidden">
+					<img src="../assets/images/socialcarousel4.png" alt="">
+				</li>
+				<li class="md:flex hidden">
+					<img src="../assets/images/socialcarousel5.png" alt="">
+				</li>
+			</ul>
+			<div class="partners mt-12 text-center p-4 ">
+				<span class=" text-3xl">PARTNER</span>
+				<div class="flex items-center justify-center">
+					<div class="grid grid-cols-6 gap-2">
+						<div class=" col-span-6 bg-zinc-800 flex justify-center items-center"><img
+								src="../assets/images/congstar_logo.png" alt=""></div>
+
+						<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img src="../assets/images/FollowFood.png"
+								alt=""></div>
+						<div class=" col-span-2 bg-zinc-800 flex justify-center items-center"><img src="../assets/images/Di!y.png"
+								alt=""></div>
+						<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img src="../assets/images/Astra.png"
+								alt=""></div>
+						<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img src="../assets/images/Levi's.png"
+								alt=""></div>
+
+						<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img src="../assets/images/Bwin.png"
+								alt=""></div>
+						<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img src="../assets/images/Licht.png"
+								alt=""></div>
+								<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img src="../assets/images/Edeka.png"
+									alt=""></div>
+								<div class="col-span-4"><img src="../assets/images/partnersky.png" alt=""></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+<footer class="bg-zinc-800  mx-auto p-16">
+	<div class="hidden md:flex justify-center items-center ">
+		<div class="grid grid-cols-5 gap-16 mt-5">
+			<div>
+				<h4>NOCH FRAGEN?</h4>
+				<p><i class="fas fa-envelope"></i>info@fcsp-shop.com</p>
+				<p><i class="fas fa-phone"></i>040 317 874 888</p>
+				<p><i class="fas fa-clock"></i>Mo - Fr 10 - 17:00 Uhr</p>
+			</div>
+			<div>
+				<h4>SICHER BEZAHLEN</h4>
+				<div class="grid grid-cols-3 gap-2">
+					<img src="../assets/images/paypal.png" alt="">
+					<img src="../assets/images/visa.png" alt="">
+					<img src="../assets/images/mastercard.png" alt="">
+					<img src="../assets/images/elv.png" alt="">
+				</div>
+			</div>
+			<div>
+				<h4>UNSERE STORES</h4>
+				<p>Harald-Stender-Platz 1</p>
+				<p>20359 Sankt Pauli</p>
+				<p>Mo - Fr 10 - 17:00 Uhr</p>
+			</div>
+			<div class="flex items-end">
+				<div class="grid grid-cols-1">
+					<p>Reeperbahn 63-65</p>
+					<p>20359 Hamburg</p>
+					<p>Mo - Fr 10 - 17:00 Uhr</p>
+				</div>
+			</div>
+			<div>
+				<h4>FC ST. PAULI</h4>
+				<p>AGB</p>
+				<p>Datenschutz</p>
+				<p>Impressum</p>
+			</div>
+			<div>
+				<h4>FCSP-SHOPS</h4>
+				<p>Die Shops</p>
+				<p>Öffnungszeiten</p>
+				<p>Anfahrt</p>
+			</div>
+			<div>
+				<h4>FANS & VIERTEL</h4>
+				<p>Fanladen</p>
+				<p>Podcast</p>
+				<p>Stadtteilführung</p>
+			</div>
+			<div>
+				<h4>FCSP</h4>
+				<p>Team</p>
+				<p>Rabauken</p>
+				<p>Museum</p>
+			</div>
+			<div>
+				<h4>HILFE</h4>
+				<p>Bezahlung & Versand</p>
+				<p>Rücksendung & Retouren</p>
+				<p>FAQ</p>
+			</div>
+			<div class="flex items-end">
+				<div class="grid grid-cols-2 gap-2">
+					<img src="../assets/images/St. Pauli.png" alt="">
+					<img src="../assets/images/Totenkopf_Weiss.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="md:hidden  justify-center items-center ">
+		<div class="grid grid-cols-6 gap-16 mt-5">
+			<div class="col-span-3">
+				<h4>NOCH FRAGEN?</h4>
+				<p><i class="fas fa-envelope"></i>info@fcsp-shop.com</p>
+				<p><i class="fas fa-phone"></i>040 317 874 888</p>
+				<p><i class="fas fa-clock"></i>Mo - Fr 10 - 17:00 Uhr</p>
+			</div>
+			<div class="col-span-3">
+				<h4>SICHER BEZAHLEN</h4>
+				<div class="grid grid-cols-3 gap-2">
+					<img src="../assets/images/paypal.png" alt="">
+					<img src="../assets/images/visa.png" alt="">
+					<img src="../assets/images/mastercard.png" alt="">
+					<img src="../assets/images/elv.png" alt="">
+				</div>
+			</div>
+			<div class="col-span-3">
+				<h4>UNSERE STORES</h4>
+				<p>Harald-Stender-Platz 1</p>
+				<p>20359 Sankt Pauli</p>
+				<p>Mo - Fr 10 - 17:00 Uhr</p>
+			</div>
+			<div class="flex items-end col-span-3">
+				<div class="grid grid-cols-1">
+					<p>Reeperbahn 63-65</p>
+					<p>20359 Hamburg</p>
+					<p>Mo - Fr 10 - 17:00 Uhr</p>
+				</div>
+			</div>
+			<div class="col-span-3">
+				<h4>FC ST. PAULI</h4>
+				<p>AGB</p>
+				<p>Datenschutz</p>
+				<p>Impressum</p>
+			</div>
+			<div class="col-span-3">
+				<h4>FCSP-SHOPS</h4>
+				<p>Die Shops</p>
+				<p>Öffnungszeiten</p>
+				<p>Anfahrt</p>
+			</div>
+			<div class="col-span-3">
+				<h4>FANS & VIERTEL</h4>
+				<p>Fanladen</p>
+				<p>Podcast</p>
+				<p>Stadtteilführung</p>
+			</div>
+			<div class="col-span-3">
+				<h4>FCSP</h4>
+				<p>Team</p>
+				<p>Rabauken</p>
+				<p>Museum</p>
+			</div>
+			<div class="col-span-3">
+				<h4>HILFE</h4>
+				<p>Bezahlung & Versand</p>
+				<p>Rücksendung & Retouren</p>
+				<p>FAQ</p>
+			</div>
+			<div class="flex items-end col-span-3">
+				<div class="grid grid-cols-2 gap-2">
+					<img src="../assets/images/St. Pauli.png" alt="">
+					<img src="../assets/images/Totenkopf_Weiss.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</html>
