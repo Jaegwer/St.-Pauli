@@ -1,22 +1,43 @@
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+@font-face {
+	font-family: 'Futura PT Bold';
+	src: url('../fonts/Futura Pt/FuturaPTBold.otf') format('opentype');
+	/* Additional font formats and styles can be defined here */
+  }
+@font-face {
+	font-family: 'Futura PT Medium';
+	src: url('../fonts/Futura Pt/FuturaPTMedium.otf') format('opentype');
+	/* Additional font formats and styles can be defined here */
+  }
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Futura PT Bold', sans-serif;
 	box-sizing: border-box;
+}
+header{
+	background-color: #EC1B24;
 }
 nav{
 	background-color: #0A0A0A;
-	color: #ffffff
+	color: #ffffff;
 
 }
+.medium a{
+	font-family: 'Futura PT Medium', sans-serif;
+}
+nav select{
+	background-color: #1B1B1B;
+}
+.bold{
+	font-family: 'Futura PT Bold', sans-serif !important;
+}
 #search-box::placeholder {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
+    font-family: 'Futura PT Medium', sans-serif;
     content: "\f002";
     color: #6F6F6F;
   }
+
   #search-box{
 	color: black;
   }
