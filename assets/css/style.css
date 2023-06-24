@@ -9,6 +9,11 @@
 	src: url('../fonts/Futura Pt/FuturaPTMedium.otf') format('opentype');
 	/* Additional font formats and styles can be defined here */
   }
+@font-face {
+	font-family: 'Futura PT Heavy';
+	src: url('../fonts/Futura Pt/FuturaPTHeavy.otf') format('opentype');
+	/* Additional font formats and styles can be defined here */
+  }
 *{
 	margin: 0;
 	padding: 0;
@@ -18,6 +23,9 @@
 header{
 	background-color: #EC1B24;
 }
+header p{
+	font-family: 'Futura PT Heavy', sans-serif;
+}
 nav{
 	background-color: #0A0A0A;
 	color: #ffffff;
@@ -26,27 +34,71 @@ nav{
 .medium a{
 	font-family: 'Futura PT Medium', sans-serif;
 }
-nav select{
+.main-dropdown{
 	background-color: #1B1B1B;
+	border: 1px solid #707070;
+	color: #FFFFFF;
+}
+.main-dropdown i{
+	color: #707070;
 }
 .bold{
 	font-family: 'Futura PT Bold', sans-serif !important;
 }
 #search-box::placeholder {
     font-family: 'Futura PT Medium', sans-serif;
-    content: "\f002";
     color: #6F6F6F;
+	background-image: url('../images/search.png');
+    background-repeat: no-repeat;
+	background-position: left center;
   }
-
-  #search-box{
+#search-box{
 	color: black;
   }
+.carousel button:hover{
+	background-color: white;
+	color: black;
+}
+.hover-img{
+	width: 16rem;
+	height: 23rem;
+  background-image: url("/St.-Pauli/assets/images/bestseller1.png");
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+.hover-img:hover {
+	background-image: url("/St.-Pauli/assets/images/bestseller3.png");
+}
+
+.size-select button{
+	background-color:#1B1B1B;
+}
+.bg-red{
+	background-color: #EC1B24 !important;
+	border-color: #EC1B24;
+}
 .main-content{
 	background-color: #121212;
 }
+.main-content button p{
+	font-size: 1.2vw;
+}
 .bg-text {
 	font-size: 7.3vw;
+	color: #222222;
 }
+.zoom-container {
+	position: relative;
+	overflow: hidden;
+	transition:  0.3s ease;
+  }
+  .zoom-container:hover .zoom-in {
+	transform: scale(1.1); /* Adjust the zoom level as needed */
+  }
+
+  .zoom-in {
+	transition: transform 0.3s ease; /* Add the transition property */
+  }
 i {
 	color: #ffffff;
 }
@@ -58,6 +110,9 @@ footer p{
 }
 footer h4{
 	color: #FFFFFF;
+}
+#email::placeholder{
+	text-align: center;
 }
 .side-content p{
 	font-size: 1.5rem;
@@ -86,3 +141,21 @@ footer h4{
 	color: #FFFFFF;
 	font-size: 1.4rem;
 }
+.gray-dot{
+	width: 10px;
+	height: 10px;
+	background-color: #606060;
+	border-radius: 50%;
+}
+.white-dot{
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	border-radius: 50%;
+  }
+.custom-dropdown{
+	background-color: #212121;
+}
+.fontAwesome {
+	font-family: Helvetica, 'FontAwesome', sans-serif;
+  }
