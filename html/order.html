@@ -165,26 +165,9 @@
 			</div>
 			<div class="side-content mt-12 col-span-2 md:col-span-1">
 				<div id="myModal" class="modal hidden fixed inset-0 bg-gray-500 bg-opacity-75 flex items-start justify-end">
-					<div class="modal-content bg-white w-128 h-full  ">
-					  <!-- Modal content goes here -->
-					  <div class="head-modal text-white text-center p-5 grid">
-						<button onclick="closeModal()" id="closeModal" class="justify-self-end">X</button>
-						<h1>
-							Warenkorb
-						</h1>
-						<p><small>Dir fehlen nur noch 19,99€</small></p>
-						<p><small>für 15% Rabatt und kostenlosenVersand</small></p>
-						<div class="w-3/4 mx-auto h-4 bg-bar flex justify-between">
-							<div class="h-full bg-white " style="width: 80%">
-							</div>
-							<div class="bg-white rounded-full ">
-								<i class="fas fa-gift fa-lg  text-black	"></i>
-							</div>
-
-						  </div>
-
-					  </div>
-
+					<div class="modal-content bg-black w-128 max-h-screen h-full grid ">
+						<button onclick="closeModal()" id="closeModal" class="justify-self-end text-white">X</button>
+					  <img src="../assets/images/Gruppe 173169.png" alt="">
 					</div>
 				  </div>
 
@@ -253,7 +236,7 @@
 						<p class="sub-text"><small class="text-sm">*inkl. MwSt., Preis zzgl. Lieferkosten</small></p>
 					</div>
 					<div class="md:col-start-2 md:col-span-4 md:mr-12 col-span-5 col-start-1 mr-0 mt-8">
-						<button  class="p-4 bg-red text-white w-full">
+						<button onclick="openModal()" class="p-4 bg-red text-white w-full">
 							ZUM WARENKORB HINZUFÜGEN
 						</button>
 					</div>
