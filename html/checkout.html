@@ -11,71 +11,71 @@
 	<link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
-<body class="bg-black">
+<body class="head-modal">
 	<div class="grid grid-cols-7 gap-12">
 		<div class="md:col-start-2 col-span-8  mx-2 flex justify-between ">
-			<img src="../assets/images/Totenkopf_Weiss.png" alt="">
+			<img src="../assets/images/st.logo.png" alt="">
 			<p class="md:hidden text-sm text-white self-end"><i class="far fa-user"></i> Mit Mein St. Pauli <span
 					class="underline text-red-600">Jetzt anmelden</span></p>
 		</div>
-		<div class="md:col-start-2 md:col-span-3  col-span-8 border-transparent bg-card rounded-md text-white p-3">
+		<div class="md:col-start-2 md:col-span-3  col-span-8 border-transparent bg-card rounded-md text-white p-3 font-nova-bold">
 			<div class="grid grid-cols-1 gap-4 md:mx-5">
-				<label for="code">Rabattcode</label>
-				<input id="code" type="text" placeholder="Rabattcode">
+				<label class="text-2xl" for="code">Rabattcode</label>
+				<input id="code" type="text" placeholder="Rabattcode" class="font-nova-rg">
 			</div>
 			<div class="md:mx-5 mt-12">
-				<p>Express Check out</p>
+				<p class="text-2xl">Express Check out</p>
 				<div class="border-2 border-gray-600 p-3 grid grid-cols-1 gap-4">
 					<button class="mx-12 md:mx-auto"><img src="../assets/images/paypalcheckout.png" alt=""></button>
 					<button class="mx-12 md:mx-auto"><img src="../assets/images/gpaycheckout.png" alt=""></button>
 				</div>
 			</div>
 			<div class="grid grid-cols-1 gap-4 md:mx-5 mt-12">
-				<label for="Kontak">Kontaktinformationen</label>
-				<input id="Kontak" type="text" placeholder="E-mail">
+				<label class="text-2xl" for="Kontak">Kontaktinformationen</label>
+				<input id="Kontak" type="text" placeholder="E-mail" class="font-nova-rg">
 				<label for="toggle" class="flex items-center cursor-pointer">
 					<div class="relative">
 						<input type="checkbox" id="toggle" class="sr-only">
-						<div class="block bg-red-700 w-10 h-6 rounded-full"></div>
+						<div class="block bg-red w-10 h-6 rounded-full"></div>
 						<div class="dot absolute right-1 top-1 bg-white w-4 h-4 rounded-full transition"></div>
 					</div>
-					<div class="ml-3 text-gray-500 font-medium">Bitte benachrichtige mich bei neuen Drops und
+					<div class="ml-3 text-white font-nova-md">Bitte benachrichtige mich bei neuen Drops und
 						Rabattaktionen per Mail.</div>
 				</label>
 
 			</div>
 			<div class="grid grid-cols-2 gap-4 md:mx-5 mt-12">
-				<p class="col-span-2">
+				<p class="col-span-2 text-2xl">
 					Versandadresse
 				</p>
-				<input class="p-4" placeholder="Vorname" type="text">
-				<input class="p-4" placeholder="Nachname" type="text">
-				<input class="p-4" placeholder="Straße" type="text">
-				<input class="p-4" placeholder="Hausnummer" type="text">
-				<select class="p-4 text-gray-400" name="" id="">
+				<input class="p-4 font-nova-rg" placeholder="Vorname" type="text" >
+				<input class="p-4 font-nova-rg" placeholder="Nachname" type="text">
+				<input class="p-4 font-nova-rg" placeholder="Straße" type="text">
+				<input class="p-4 font-nova-rg" placeholder="Hausnummer" type="text">
+				<select class="p-4 text-gray-400 font-nova-rg" name="" id="">
 					<option value="">Land</option>
 				</select>
-				<select class="p-4 text-gray-400" name="" id="">
-					<option value="">Stadt</option>
+				<select class="p-4 text-gray-400 font-nova-rg" name="" id="">
+					<option class=" " value="">Stadt</option>
 				</select>
-				<input class="p-4" placeholder="Postleitzahl" type="number">
-				<input class="p-4" placeholder="Telefonnummer" type="number">
+				<input class="p-4 font-nova-rg" placeholder="Postleitzahl" type="number">
+				<input class="p-4 font-nova-rg" placeholder="Telefonnummer" type="number">
 			</div>
 			<div class="grid-cols-1 gap-4 md:mx-5 mt-12">
-				<p>Zahlungsadresse</p>
+				<p class="text-2xl">Zahlungsadresse</p>
 				<div class="flex border-transparent bg-white text-gray-400 items-center justify-between p-4 mt-2">
-					<label class="radio-label" for="option1">Gleich wie die Versandadresse</label>
+					<label class="radio-label font-nova-rg" for="option1">Gleich wie die Versandadresse</label>
 					<input type="radio" id="option1" name="radioOptions"
 						class="mr-2 text-red-500 focus:ring-2 focus:ring-red-500 form-radio">
 				</div>
 				<div class="flex border-transparent bg-white text-gray-400 items-center justify-between p-4 mt-2">
-					<label class="radio-label" for="option2">Andere Zahlungsadresse eintragen</label>
+					<label class="radio-label font-nova-rg" for="option2">Andere Zahlungsadresse eintragen</label>
 					<input type="radio" id="option2" name="radioOptions"
 						class="mr-2 text-red-500 focus:ring-2 focus:ring-red-500 form-radio">
 				</div>
 			</div>
 			<div class="grid-cols-1 gap-4 md:mx-5 mt-12">
-				<p>Zahlungsmöglichkeit</p>
+				<p class="text-2xl">Zahlungsmöglichkeit</p>
 				<div class="flex border-transparent bg-white text-gray-400 items-center justify-between p-4 mt-2">
 					<label class="radio-label" for="option1"><img src="../assets/images/paypal2.png" alt=""></label>
 					<input type="radio" id="option1" name="radioOptions"
@@ -94,7 +94,7 @@
 				</div>
 			</div>
 			<div class="grid-cols-1 gap-4 md:mx-5 mt-12">
-				<p>Versanddienstleister</p>
+				<p class="text-2xl">Versanddienstleister</p>
 				<div class="flex border-transparent bg-white text-gray-400 items-center justify-between p-4 mt-2">
 					<label class="radio-label" for="option1"><img src="../assets/images/dhl.png" alt=""></label>
 					<input type="radio" id="option1" name="radioOptions"
@@ -104,7 +104,7 @@
 		</div>
 		<div class="md:col-span-3 col-span-8 mx-2 text-white ">
 			<div class="md:fixed">
-				<p>Deine Bestellung</p>
+				<p class="text-2xl font-nova-bold">Deine Bestellung</p>
 				<div class="grid grid-cols-4 gap-4 border-b-2 border-zinc-700 p-2">
 					<div>
 						<img src="../assets/images/test.png" alt="">
@@ -112,16 +112,16 @@
 					<div class="grid text-white col-span-2">
 						<p>“Welcome to Hell“</p>
 						<div class="grid justify-self-start self-end">
-							<p>Produkt: T-Shirt</p>
-							<p>Größe: S</p>
-							<p>Farbe: Black</p>
-							<p>Anzahl: 1</p>
+							<p class="font-book">Produkt: T-Shirt</p>
+							<p class="font-book">Größe: S</p>
+							<p class="font-book">Farbe: Black</p>
+							<p class="font-book">Anzahl: 1</p>
 						</div>
 					</div>
 					<div class="grid text-white ">
-						<button class="grid self-start">X</button>
-						<div class="grid justify-self-start self-end">
-							<p>99,99 €</p>
+						<button class="grid justify-self-end self-start">X</button>
+						<div class="grid justify-self-end self-end">
+							<p class="font-md">99,99 €</p>
 
 						</div>
 					</div>
@@ -132,37 +132,37 @@
 					</div>
 					<div class="grid  col-span-2">
 						<p>“Welcome to Hell“</p>
-						<div class="grid justify-self-start self-end">
-							<p>Produkt: T-Shirt</p>
-							<p>Größe: S</p>
-							<p>Farbe: Black</p>
-							<p>Anzahl: 1</p>
+						<div class="grid justify-self-start self-end ">
+							<p class="font-book">Produkt: T-Shirt</p>
+							<p class="font-book">Größe: S</p>
+							<p class="font-book">Farbe: Black</p>
+							<p class="font-book">Anzahl: 1</p>
 						</div>
 					</div>
 					<div class="grid">
-						<button class="grid self-start">X</button>
-						<div class="grid justify-self-start self-end">
-							<p>99,99 €</p>
+						<button class="grid justify-self-end self-start">X</button>
+						<div class="grid justify-self-end self-end">
+							<p class="font-md">99,99 €</p>
 
 						</div>
 					</div>
 				</div>
 				<div class="grid grid-cols-4 summary mt-4">
-					<div class="">
-						<p>Du sparst </p>
-						<p>Steuern</p>
-						<p>Versandkosten</p>
-						<h1>Gesamt</h1>
+					<div >
+						<p class="font-nova-md mt-2">Du sparst </p>
+						<p class="font-nova-md mt-2">Steuern</p>
+						<p class="font-nova-md mt-2">Versandkosten</p>
+						<h1 class="mt-2 text-lg">Gesamt</h1>
 					</div>
-					<div class="col-start-4">
-						<p>19,99 € </p>
-						<p>19,99 €</p>
-						<p>Kostenlos</p>
-						<h1>99,99 €</h1>
+					<div class="col-start-5">
+						<p class="font-nova-md mt-2">19,99 € </p>
+						<p class="font-nova-md mt-2">19,99 €</p>
+						<p class="font-nova-md mt-2">Kostenlos</p>
+						<h1 class="mt-2 text-lg">99,99 €</h1>
 					</div>
 				</div>
 				<div class="grid grid-cols-3 mt-4">
-					<button class="bg-red-600 col-span-3 p-4 md:mx-8">SICHER ZUM CHECK OUT</button>
+					<button class="bg-red col-span-3 p-4 md:mx-8 text-2xl">SICHER ZUM CHECK OUT</button>
 				</div>
 				<div class="grid grid-cols-1 mt-4 mx-12">
 					<img class="" src="../assets/images/Bild 4.png" alt="">
