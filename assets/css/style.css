@@ -14,6 +14,11 @@
 	src: url('../fonts/Futura Pt/FuturaPTHeavy.otf') format('opentype');
 	/* Additional font formats and styles can be defined here */
   }
+@font-face {
+	font-family: 'Futura PT Book';
+	src: url('../fonts/Futura Pt/FuturaPTBook.otf') format('opentype');
+	/* Additional font formats and styles can be defined here */
+  }
 *{
 	margin: 0;
 	padding: 0;
@@ -107,9 +112,11 @@ i {
 }
 footer p{
 	color: #C1C1C1;
+	font-family: 'Futura PT Medium', sans-serif !important;
 }
 footer h4{
 	color: #FFFFFF;
+	font-size: 1.1vw;
 }
 #email::placeholder{
 	text-align: center;
@@ -165,3 +172,61 @@ footer h4{
   .bg-card{
 	background-color: #2C2C2C;
   }
+footer i{
+	color: #C1C1C1;
+}
+footer{
+	background-color: #212121;
+}
+.zoom-container{
+	background-color: #222222;
+}
+#email::placeholder {
+    font-family: 'Futura PT Medium', sans-serif;
+    color: #6F6F6F;
+	background-image: url('../images/mail.png');
+    background-repeat: no-repeat;
+	background-position: left center;
+  }
+  .pagination a{
+	border:1px solid #707070;
+	color: #FFFFFF
+  }
+  /* Style for the modal overlay */
+.modal {
+	z-index: 9999;
+  }
+
+  /* Style for the modal content */
+  .modal-content {
+	max-height: 80vh;
+	overflow-y: auto;
+  }
+.bg-bar{
+	background-color: #606060;
+}
+.modal-content p{
+font-size: 1.1rem;
+}
+.modal-content h1{
+font-size: 1.2rem;
+}
+
+.head-modal{
+	background-color: #121212;
+
+}
+.gray-text{
+	color: #D6D6D6;
+	font-family: 'Futura PT Book', sans-serif;
+	font-size: 1.2rem;
+}
+.card-img span{
+	font-family: 'Futura PT Medium', sans-serif;
+}
+.font-book{
+	font-family: 'Futura PT Book', sans-serif !important;
+}
+.font-md{
+	font-family: 'Futura PT Medium', sans-serif !important;
+}

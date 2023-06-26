@@ -111,14 +111,83 @@
 <body>
 	<div class="main-content">
 		<div class="grid grid-cols-2">
+			<div id="myElement" class="absolute hidden grid grid-rows-8 grid-flow-col gap-16  p-8 custom-dropdown w-full">
+				<div class="mx-6">
+					<img src="/St.-Pauli/assets/images/FCSP Shops.png" alt="">
+				</div>
+				<div>
+					<img src="/St.-Pauli/assets/images/FCSP Shops2.png" alt="">
+				</div>
+				<div>
+					<img src="/St.-Pauli/assets/images/FCSP Shops3.png" alt="">
+				</div>
+				<div>
+					<img src="/St.-Pauli/assets/images/FCSP Shops4.png" alt="">
+				</div>
+				<div>
+					<img src="/St.-Pauli/assets/images/FCSP Shops5.png" alt="">
+				</div>
+				<div>
+					<img src="/St.-Pauli/assets/images/FCSP Shops6.png" alt="">
+				</div>
+				<div>
+					<img src="/St.-Pauli/assets/images/FCSP Shops7.png" alt="">
+				</div>
+				<div>
+					<img src="/St.-Pauli/assets/images/shopman.png" alt="">
+				</div>
+			</div>
 			<div class="relative mx-auto col-span-2 md:col-span-1">
 				<img src="../assets/images/order.png" alt="">
 				<button class="absolute top-0 left-0">
 					<img class="bg-black p-2 mt-5" src="../assets/images/back.png" alt="">
 					<i class="far fa-heart mt-5 bg-gray-500 p-3 fa-2x"></i>
 				</button>
+				<i class="fas fa-chevron-left absolute bottom-44 left-6 text-white fa-2x"></i>
+				<ul class="absolute bottom-36 left-72 flex justify-center mt-3 p-8">
+					<li>
+						<div class="gray-dot"></div>
+					</li>
+					<li class="mx-1">
+						<div class="gray-dot"></div>
+					</li>
+					<li>
+						<div class="gray-dot"></div>
+					</li>
+					<li class="mx-1">
+						<div class="white-dot"></div>
+					</li>
+					<li>
+						<div class="gray-dot"></div>
+					</li>
+				</ul>
+				<i class="fas fa-chevron-right absolute bottom-44 right-6 text-white fa-2x"></i>
 			</div>
 			<div class="side-content mt-12 col-span-2 md:col-span-1">
+				<div id="myModal" class="modal  fixed inset-0 bg-gray-500 bg-opacity-75 flex items-start justify-end">
+					<div class="modal-content bg-white w-128 h-full  ">
+					  <!-- Modal content goes here -->
+					  <div class="head-modal text-white text-center p-5 grid">
+						<button onclick="closeModal()" id="closeModal" class="justify-self-end">X</button>
+						<h1>
+							Warenkorb
+						</h1>
+						<p><small>Dir fehlen nur noch 19,99€</small></p>
+						<p><small>für 15% Rabatt und kostenlosenVersand</small></p>
+						<div class="w-3/4 mx-auto h-4 bg-bar flex justify-between">
+							<div class="h-full bg-white " style="width: 80%">
+							</div>
+							<div class="bg-white rounded-full ">
+								<i class="fas fa-gift fa-lg  text-black	"></i>
+							</div>
+
+						  </div>
+
+					  </div>
+
+					</div>
+				  </div>
+
 				<div class=" grid grid-cols-5 ">
 					<div class="text-white col-start-1 md:col-start-2 col-span-3">
 						<p>TRIKOT AKAB BRAUN</p>
@@ -134,12 +203,12 @@
 						<ul>
 							<li class="size-select">
 								<button class="px-3 bg-red  border-2 border-gray-900">S</button>
-								<button class="px-3 bg-zinc-800  border-2 border-gray-900">M</button>
-								<button class=" px-3  bg-zinc-800 border-2 border-gray-900">
+								<button class="px-3   border-2 border-gray-900">M</button>
+								<button class=" px-3   border-2 border-gray-900">
 
 									L</button>
-								<button class="px-3 bg-zinc-800 border-2 border-gray-900">XL</button>
-								<button class="px-3 bg-zinc-800 border-2 border-gray-900">XXL</button>
+								<button class="px-3  border-2 border-gray-900">XL</button>
+								<button class="px-3  border-2 border-gray-900">XXL</button>
 								<span><small class=" text-zinc-700">Hier klicken zur <span class="underline">Größentabelle</span> </small>
 								</span>
 							</li>
@@ -184,11 +253,11 @@
 						<p class="sub-text"><small class="text-sm">*inkl. MwSt., Preis zzgl. Lieferkosten</small></p>
 					</div>
 					<div class="md:col-start-2 md:col-span-4 md:mr-12 col-span-5 col-start-1 mr-0 mt-8">
-						<button class="p-4 bg-red text-white w-full">
+						<button onclick="openModal()" class="p-4 bg-red text-white w-full">
 							ZUM WARENKORB HINZUFÜGEN
 						</button>
 					</div>
-					<div class="col-start-2 md:col-span-7 col-span-3 mt-8 ">
+					<div class="md:col-start-2 md:col-span-4 md:mr-12 col-span-5 col-start-1 mr-0 mt-8 ">
 						<ul class="flex justify-center ">
 							<li class="mx-2">
 								<img src="../assets/images/paypalorder.png" alt="">
@@ -222,7 +291,8 @@
 			<h3 class="text-center text-white text-4xl">
 				Mehr aus der Kollektion
 			</h3>
-			<ul class="flex justify-around">
+			<ul class="flex justify-around mt-5">
+				<i class="fas fa-chevron-left  self-center text-white fa-lg"></i>
 				<li>
 					<div class="card-img xl:w-64 w-48">
 						<div class="relative max-w-sm rounded overflow-hidden shadow-lg">
@@ -238,15 +308,15 @@
 							<ul
 								class="md:flex hidden absolute text-white bottom-0 left-0 w-full bg-black bg-opacity-50 py-4 flex flex-col items-center justify-center">
 								<span>Größe auswählen</span>
-								<li>
-									<button class="px-3 bg-red-800  border-2 border-gray-900">S</button>
-									<button class="px-3 bg-gray-900  border-2 border-gray-900">M</button>
-									<button class="relative px-3 text-gray-600 bg-gray-900 border-2 border-gray-900">
+								<li class="size-select">
+									<button class="px-3 bg-red  border-2 border-gray-900">S</button>
+									<button class="px-3   border-2 border-gray-900">M</button>
+									<button class="relative px-3 text-gray-600  border-2 border-gray-900">
 										<span
 											class="absolute top-0 right-1 w-full h-0.5 bg-gray-500 transform -rotate-45 origin-top-right"></span>
 										L</button>
-									<button class="px-3 bg-gray-900 border-2 border-gray-900">XL</button>
-									<button class="px-3 bg-gray-900 border-2 border-gray-900">XXL</button>
+									<button class="px-3  border-2 border-gray-900">XL</button>
+									<button class="px-3  border-2 border-gray-900">XXL</button>
 								</li>
 							</ul>
 						</div>
@@ -296,15 +366,15 @@
 							<ul
 								class="absolute text-white bottom-0 left-0 w-full bg-black bg-opacity-50 py-4 flex flex-col items-center justify-center">
 								<span>Größe auswählen</span>
-								<li>
-									<button class="px-3 bg-red-800  border-2 border-gray-900">S</button>
-									<button class="px-3 bg-gray-900  border-2 border-gray-900">M</button>
-									<button class="relative px-3 text-gray-600 bg-gray-900 border-2 border-gray-900">
+								<li class="size-select">
+									<button class="px-3 bg-red  border-2 border-gray-900">S</button>
+									<button class="px-3   border-2 border-gray-900">M</button>
+									<button class="relative px-3 text-gray-600  border-2 border-gray-900">
 										<span
 											class="absolute top-0 right-1 w-full h-0.5 bg-gray-500 transform -rotate-45 origin-top-right"></span>
 										L</button>
-									<button class="px-3 bg-gray-900 border-2 border-gray-900">XL</button>
-									<button class="px-3 bg-gray-900 border-2 border-gray-900">XXL</button>
+									<button class="px-3  border-2 border-gray-900">XL</button>
+									<button class="px-3  border-2 border-gray-900">XXL</button>
 								</li>
 							</ul>
 						</div>
@@ -326,15 +396,15 @@
 							<ul
 								class="absolute text-white bottom-0 left-0 w-full bg-black bg-opacity-50 py-4 flex flex-col items-center justify-center">
 								<span>Größe auswählen</span>
-								<li>
-									<button class="px-3 bg-red-800  border-2 border-gray-900">S</button>
-									<button class="px-3 bg-gray-900  border-2 border-gray-900">M</button>
-									<button class="relative px-3 text-gray-600 bg-gray-900 border-2 border-gray-900">
+								<li class="size-select">
+									<button class="px-3 bg-red  border-2 border-gray-900">S</button>
+									<button class="px-3   border-2 border-gray-900">M</button>
+									<button class="relative px-3 text-gray-600  border-2 border-gray-900">
 										<span
 											class="absolute top-0 right-1 w-full h-0.5 bg-gray-500 transform -rotate-45 origin-top-right"></span>
 										L</button>
-									<button class="px-3 bg-gray-900 border-2 border-gray-900">XL</button>
-									<button class="px-3 bg-gray-900 border-2 border-gray-900">XXL</button>
+									<button class="px-3  border-2 border-gray-900">XL</button>
+									<button class="px-3  border-2 border-gray-900">XXL</button>
 								</li>
 							</ul>
 						</div>
@@ -344,13 +414,32 @@
 						</div>
 					</div>
 				</li>
+				<i class="fas fa-chevron-right  self-center text-white fa-lg"></i>
+			</ul>
+			<ul class="flex justify-center mt-3 p-8">
+				<li>
+					<div class="gray-dot"></div>
+				</li>
+				<li class="mx-1">
+					<div class="gray-dot"></div>
+				</li>
+				<li>
+					<div class="gray-dot"></div>
+				</li>
+				<li class="mx-1">
+					<div class="white-dot"></div>
+				</li>
+				<li>
+					<div class="gray-dot"></div>
+				</li>
 			</ul>
 		</div>
 		<div class="mt-12">
 			<h3 class="text-center text-white text-4xl">
 				Unsere Bestseller
 			</h3>
-			<ul class="flex justify-around">
+			<ul class="flex justify-around mt-5">
+				<i class="fas fa-chevron-left  self-center text-white fa-lg"></i>
 				<li>
 					<div class="card-img xl:w-64 w-48">
 						<div class="relative max-w-sm rounded overflow-hidden shadow-lg">
@@ -365,15 +454,15 @@
 							<ul
 								class="md:flex hidden absolute text-white bottom-0 left-0 w-full bg-black bg-opacity-50 py-4 flex flex-col items-center justify-center">
 								<span>Größe auswählen</span>
-								<li>
-									<button class="px-3 bg-red-800  border-2 border-gray-900">S</button>
-									<button class="px-3 bg-gray-900  border-2 border-gray-900">M</button>
-									<button class="relative px-3 text-gray-600 bg-gray-900 border-2 border-gray-900">
+								<li class="size-select">
+									<button class="px-3 bg-red  border-2 border-gray-900">S</button>
+									<button class="px-3   border-2 border-gray-900">M</button>
+									<button class="relative px-3 text-gray-600  border-2 border-gray-900">
 										<span
 											class="absolute top-0 right-1 w-full h-0.5 bg-gray-500 transform -rotate-45 origin-top-right"></span>
 										L</button>
-									<button class="px-3 bg-gray-900 border-2 border-gray-900">XL</button>
-									<button class="px-3 bg-gray-900 border-2 border-gray-900">XXL</button>
+									<button class="px-3  border-2 border-gray-900">XL</button>
+									<button class="px-3  border-2 border-gray-900">XXL</button>
 								</li>
 							</ul>
 						</div>
@@ -423,15 +512,15 @@
 							<ul
 								class="absolute text-white bottom-0 left-0 w-full bg-black bg-opacity-50 py-4 flex flex-col items-center justify-center">
 								<span>Größe auswählen</span>
-								<li>
-									<button class="px-3 bg-red-800  border-2 border-gray-900">S</button>
-									<button class="px-3 bg-gray-900  border-2 border-gray-900">M</button>
-									<button class="relative px-3 text-gray-600 bg-gray-900 border-2 border-gray-900">
+								<li class="size-select">
+									<button class="px-3 bg-red  border-2 border-gray-900">S</button>
+									<button class="px-3   border-2 border-gray-900">M</button>
+									<button class="relative px-3 text-gray-600  border-2 border-gray-900">
 										<span
 											class="absolute top-0 right-1 w-full h-0.5 bg-gray-500 transform -rotate-45 origin-top-right"></span>
 										L</button>
-									<button class="px-3 bg-gray-900 border-2 border-gray-900">XL</button>
-									<button class="px-3 bg-gray-900 border-2 border-gray-900">XXL</button>
+									<button class="px-3  border-2 border-gray-900">XL</button>
+									<button class="px-3  border-2 border-gray-900">XXL</button>
 								</li>
 							</ul>
 						</div>
@@ -453,15 +542,15 @@
 							<ul
 								class="absolute text-white bottom-0 left-0 w-full bg-black bg-opacity-50 py-4 flex flex-col items-center justify-center">
 								<span>Größe auswählen</span>
-								<li>
-									<button class="px-3 bg-red-800  border-2 border-gray-900">S</button>
-									<button class="px-3 bg-gray-900  border-2 border-gray-900">M</button>
-									<button class="relative px-3 text-gray-600 bg-gray-900 border-2 border-gray-900">
+								<li class="size-select">
+									<button class="px-3 bg-red  border-2 border-gray-900">S</button>
+									<button class="px-3   border-2 border-gray-900">M</button>
+									<button class="relative px-3 text-gray-600  border-2 border-gray-900">
 										<span
 											class="absolute top-0 right-1 w-full h-0.5 bg-gray-500 transform -rotate-45 origin-top-right"></span>
 										L</button>
-									<button class="px-3 bg-gray-900 border-2 border-gray-900">XL</button>
-									<button class="px-3 bg-gray-900 border-2 border-gray-900">XXL</button>
+									<button class="px-3  border-2 border-gray-900">XL</button>
+									<button class="px-3  border-2 border-gray-900">XXL</button>
 								</li>
 							</ul>
 						</div>
@@ -471,63 +560,166 @@
 						</div>
 					</div>
 				</li>
+				<i class="fas fa-chevron-right  self-center text-white fa-lg"></i>
+			</ul>
+			<ul class="flex justify-center mt-3 p-8">
+				<li>
+					<div class="gray-dot"></div>
+				</li>
+				<li class="mx-1">
+					<div class="gray-dot"></div>
+				</li>
+				<li>
+					<div class="gray-dot"></div>
+				</li>
+				<li class="mx-1">
+					<div class="white-dot"></div>
+				</li>
+				<li>
+					<div class="gray-dot"></div>
+				</li>
 			</ul>
 		</div>
-		<div class="main-content socials md:hidden">
-			<div class="relative ">
-				<img class="mx-auto" src="../assets/images/pauli-newsletter2.jpg" alt="">
-				<div class="absolute md:bottom-0 bottom-4  flex items-center justify-center w-full">
-					<input placeholder="Trage Deine E-Mail-Adresse ein" type="email">
+		<div class="flex grid grid-cols-2">
+			<div class="hidden md:flex relative">
+				<div class="zoom-container">
+					<img class="" src="/St.-Pauli/assets/images/shopimage2.png" alt="">
+					<div
+						class="absolute bottom-0 left-0 w-full  bg-opacity-50 py-4 flex flex-col items-center justify-center">
+						<p class="bg-text text-white text-2xl mb-2 w-60 text-center">Unsere neue Kollektion für Männer</p>
+						<button class="px-12 py-2 border-2 border-inherit text-white">JETZT SHOPPEN</button>
+					</div>
+				</div>
+
+			</div>
+			<div class="md:hidden relative mobile-shop">
+				<img src="/St.-Pauli/assets/images/shopimage2.png" alt="">
+				<div class="absolute bottom-0 left-0 w-full  bg-opacity-50 py-2 flex flex-col items-center justify-center">
+					<p class=" text-white  mb-2 w-24 text-center">Unsere neue Kollektion für Männer</p>
+					<button class="px-12 py-2 border-2 border-inherit text-white">JETZT SHOPPEN</button>
+				</div>
+
+			</div>
+			<div class="hidden md:flex relative">
+				<div class="zoom-container">
+					<img class="" src="/St.-Pauli/assets/images/shopimage3.png" alt="">
+					<div
+						class="absolute bottom-0 left-0 w-full  bg-opacity-50 py-4 flex flex-col items-center justify-normal">
+						<p class="bg-text text-white text-2xl mb-2 text-center">Kollektion für Frauen</p>
+						<button class="px-12 py-2 border-2 border-inherit text-black bg-white">JETZT SHOPPEN</button>
+					</div>
+				</div>
+
+			</div>
+			<div class="md:hidden relative mobile-shop">
+				<img src="/St.-Pauli/assets/images/shopimage3.png" alt="">
+				<div class="absolute bottom-0 left-0 w-full  bg-opacity-50 py-2 flex flex-col items-center justify-center">
+					<p class=" text-white w-24  mb-2 text-center">Kollektion für Frauen</p>
+					<button class="px-12 py-2 border-2 border-inherit text-black bg-white">JETZT SHOPPEN</button>
 				</div>
 			</div>
-			<div class="relative">
-				<p class="bg-text   text-center">INSTAGRAM SOCIAL MEDIA</p>
-			<div
-				class="text-sm md:text-5xl absolute bottom-0 left-0 w-full py-4 md:py-16 flex  items-center justify-center">
-				<i class="fab fa-instagram"></i>
-				<span class="mx-5">#DIESTRASSETRAEGTSTPAULI</span>
+		</div>
+		<div class="main-content socials">
+			<div class="relative hidden md:flex">
+				<img class="mx-auto" src="/St.-Pauli/assets/images/pauli-newsletter2.jpg" alt="">
+				<div class="absolute bottom-0   flex items-center justify-center w-full">
+					<input id="email" class="w-1/3" placeholder="Trage Deine E-Mail-Adresse ein" type="email">
+
+				</div>
 			</div>
+			<div class="relative md:hidden">
+				<img class="mx-auto" src="/St.-Pauli/assets/images/pauli-newsletter2.jpg" alt="">
+				<div class="absolute md:bottom-0 bottom-4  flex items-center justify-center w-full">
+					<input class="w-1/3" id="email" placeholder="Trage Deine E-Mail-Adresse ein" type="email">
+				</div>
 			</div>
-			<ul class="flex justify-around">
-				<li>
-					<img src="../assets/images/socialcarousel1.png" alt="">
-				</li>
-				<li>
-					<img src="../assets/images/socialcarousel2.png" alt="">
-				</li>
-				<li>
-					<img src="../assets/images/socialcarousel3.png" alt="">
-				</li>
-				<li class="md:flex hidden">
-					<img src="../assets/images/socialcarousel4.png" alt="">
-				</li>
-				<li class="md:flex hidden">
-					<img src="../assets/images/socialcarousel5.png" alt="">
-				</li>
-			</ul>
-			<div class="partners mt-12 text-center p-4 ">
+			<div>
+				<div class="relative">
+					<p class="bg-text t  text-center">INSTAGRAM SOCIAL MEDIA</p>
+					<div
+						class="text-sm md:text-5xl absolute bottom-0 left-0 w-full py-4 md:py-16 flex  items-center justify-center">
+						<i class="fab fa-instagram"></i>
+						<span class="mx-5">#DIESTRASSETRAEGTSTPAULI</span>
+					</div>
+				</div>
+				<ul class="flex justify-around">
+					<li>
+						<img src="/St.-Pauli/assets/images/socialcarousel1.png" alt="">
+					</li>
+					<li>
+						<img src="/St.-Pauli/assets/images/socialcarousel2.png" alt="">
+					</li>
+					<li>
+						<img src="/St.-Pauli/assets/images/socialcarousel3.png" alt="">
+					</li>
+					<li class="md:flex hidden">
+						<img src="/St.-Pauli/assets/images/socialcarousel4.png" alt="">
+					</li>
+					<li class="md:flex hidden">
+						<img src="/St.-Pauli/assets/images/socialcarousel5.png" alt="">
+					</li>
+					<li class="md:flex hidden">
+						<img src="/St.-Pauli/assets/images/socialcarousel1.png" alt="">
+					</li>
+					<li class="md:flex hidden">
+						<img src="/St.-Pauli/assets/images/socialcarousel2.png" alt="">
+					</li>
+
+				</ul>
+			</div>
+
+			<div class="partners mt-12 text-center p-4  md:hidden">
 				<span class=" text-3xl">PARTNER</span>
 				<div class="flex items-center justify-center">
 					<div class="grid grid-cols-6 gap-2">
-						<div class=" col-span-6 bg-zinc-800 flex justify-center items-center"><img
-								src="../assets/images/congstar_logo.png" alt=""></div>
+						<div class=" col-span-6 bg-zinc-800 flex justify-center items-center">
+							<img src="/St.-Pauli/assets/images/congstar_logo.png" alt="">
+						</div>
 
-						<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img src="../assets/images/FollowFood.png"
-								alt=""></div>
-						<div class=" col-span-2 bg-zinc-800 flex justify-center items-center"><img src="../assets/images/Di!y.png"
-								alt=""></div>
-						<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img src="../assets/images/Astra.png"
-								alt=""></div>
-						<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img src="../assets/images/Levi's.png"
-								alt=""></div>
+						<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img
+								src="/St.-Pauli/assets/images/FollowFood.png" alt=""></div>
+						<div class=" col-span-2 bg-zinc-800 flex justify-center items-center"><img
+								src="/St.-Pauli/assets/images/Di!y.png" alt=""></div>
+						<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img
+								src="/St.-Pauli/assets/images/Astra.png" alt=""></div>
+						<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img
+								src="/St.-Pauli/assets/images/Levi's.png" alt=""></div>
 
-						<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img src="../assets/images/Bwin.png"
-								alt=""></div>
-						<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img src="../assets/images/Licht.png"
-								alt=""></div>
-								<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img src="../assets/images/Edeka.png"
-									alt=""></div>
-								<div class="col-span-4"><img src="../assets/images/partnersky.png" alt=""></div>
+						<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img
+								src="/St.-Pauli/assets/images/Bwin.png" alt=""></div>
+						<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img
+								src="/St.-Pauli/assets/images/Licht.png" alt=""></div>
+						<div class="col-span-2 bg-zinc-800 flex justify-center items-center"><img
+								src="/St.-Pauli/assets/images/Edeka.png" alt=""></div>
+						<div class="col-span-4"><img src="/St.-Pauli/assets/images/partnersky.png" alt=""></div>
+					</div>
+				</div>
+
+			</div>
+			<div class="partners mt-12 text-center p-12 hidden md:block">
+				<span class=" text-4xl">PARTNER</span>
+				<div class="flex items-center justify-center">
+					<div class="grid grid-cols-7 gap-2">
+						<div class="zoom-container col-span-5  flex justify-center items-center">
+
+							<img class="zoom-in" src="/St.-Pauli/assets/images/congstar_logo.png" alt="">
+						</div>
+						<div class="col-span-2"><img class="w-full" src="/St.-Pauli/assets/images/partnersky.png" alt="">
+						</div>
+						<div class=" zoom-container flex justify-center items-center"><img class="zoom-in"
+								src="/St.-Pauli/assets/images/FollowFood.png" alt=""></div>
+						<div class="zoom-container flex justify-center items-center"><img class="zoom-in"
+								src="/St.-Pauli/assets/images/Di!y.png" alt=""></div>
+						<div class=" zoom-container p-12 flex justify-center items-center"><img class="zoom-in"
+								src="/St.-Pauli/assets/images/Astra.png" alt=""></div>
+						<div class=" zoom-container flex justify-center items-center"><img class="zoom-in"
+								src="/St.-Pauli/assets/images/Levi's.png" alt=""></div>
+						<div class=" zoom-container flex justify-center items-center"><img class="zoom-in"
+								src="/St.-Pauli/assets/images/Edeka.png" alt=""></div>
+						<div class=" zoom-container flex justify-center items-center"><img class="zoom-in"
+								src="/St.-Pauli/assets/images/Bwin.png" alt=""></div>
+						<div class=" zoom-container flex justify-center items-center"><img class="zoom-in"
+								src="/St.-Pauli/assets/images/Licht.png" alt=""></div>
 					</div>
 				</div>
 
@@ -535,75 +727,78 @@
 		</div>
 	</div>
 </body>
-<footer class="bg-zinc-800  mx-auto p-16">
-	<div class="hidden md:flex justify-center items-center ">
-		<div class="grid grid-cols-5 gap-16 mt-5">
-			<div>
-				<h4>NOCH FRAGEN?</h4>
-				<p><i class="fas fa-envelope"></i>info@fcsp-shop.com</p>
-				<p><i class="fas fa-phone"></i>040 317 874 888</p>
-				<p><i class="fas fa-clock"></i>Mo - Fr 10 - 17:00 Uhr</p>
-			</div>
-			<div>
-				<h4>SICHER BEZAHLEN</h4>
-				<div class="grid grid-cols-3 gap-2">
-					<img src="../assets/images/paypal.png" alt="">
-					<img src="../assets/images/visa.png" alt="">
-					<img src="../assets/images/mastercard.png" alt="">
-					<img src="../assets/images/elv.png" alt="">
+<footer class=" p-16">
+	<div class="ml-16">
+		<div class="hidden md:flex justify-center items-center ">
+			<div class="grid grid-cols-5 gap-10 mt-5">
+				<div class="grid gap-2">
+					<h4>NOCH FRAGEN?</h4>
+					<p><i class="fas fa-envelope"></i> info@fcsp-shop.com</p>
+					<p><i class="fas fa-phone"></i> 040 317 874 888</p>
+					<p><i class="fas fa-clock"></i> Mo - Fr 10 - 17:00 Uhr</p>
 				</div>
-			</div>
-			<div>
-				<h4>UNSERE STORES</h4>
-				<p>Harald-Stender-Platz 1</p>
-				<p>20359 Sankt Pauli</p>
-				<p>Mo - Fr 10 - 17:00 Uhr</p>
-			</div>
-			<div class="flex items-end">
-				<div class="grid grid-cols-1">
-					<p>Reeperbahn 63-65</p>
-					<p>20359 Hamburg</p>
+				<div class="grid gap-2">
+					<h4>SICHER BEZAHLEN</h4>
+					<div class="grid grid-cols-3 gap-2">
+						<img src="/St.-Pauli/assets/images/paypal.png" alt="">
+						<img src="/St.-Pauli/assets/images/visa.png" alt="">
+						<img src="/St.-Pauli/assets/images/mastercard.png" alt="">
+						<img src="/St.-Pauli/assets/images/elv.png" alt="">
+					</div>
+				</div>
+				<div class="grid gap-2">
+					<h4>UNSERE STORES</h4>
+					<p>Harald-Stender-Platz 1</p>
+					<p>20359 Sankt Pauli</p>
 					<p>Mo - Fr 10 - 17:00 Uhr</p>
 				</div>
-			</div>
-			<div>
-				<h4>FC ST. PAULI</h4>
-				<p>AGB</p>
-				<p>Datenschutz</p>
-				<p>Impressum</p>
-			</div>
-			<div>
-				<h4>FCSP-SHOPS</h4>
-				<p>Die Shops</p>
-				<p>Öffnungszeiten</p>
-				<p>Anfahrt</p>
-			</div>
-			<div>
-				<h4>FANS & VIERTEL</h4>
-				<p>Fanladen</p>
-				<p>Podcast</p>
-				<p>Stadtteilführung</p>
-			</div>
-			<div>
-				<h4>FCSP</h4>
-				<p>Team</p>
-				<p>Rabauken</p>
-				<p>Museum</p>
-			</div>
-			<div>
-				<h4>HILFE</h4>
-				<p>Bezahlung & Versand</p>
-				<p>Rücksendung & Retouren</p>
-				<p>FAQ</p>
-			</div>
-			<div class="flex items-end">
-				<div class="grid grid-cols-2 gap-2">
-					<img src="../assets/images/St. Pauli.png" alt="">
-					<img src="../assets/images/Totenkopf_Weiss.png" alt="">
+				<div class="flex items-end">
+					<div class="grid grid-cols-1 gap-2">
+						<p>Reeperbahn 63-65</p>
+						<p>20359 Hamburg</p>
+						<p>Mo - Fr 10 - 17:00 Uhr</p>
+					</div>
+				</div>
+				<div class="grid gap-2">
+					<h4>FC ST. PAULI</h4>
+					<p>AGB</p>
+					<p>Datenschutz</p>
+					<p>Impressum</p>
+				</div>
+				<div class="grid gap-2">
+					<h4>FCSP-SHOPS</h4>
+					<p>Die Shops</p>
+					<p>Öffnungszeiten</p>
+					<p>Anfahrt</p>
+				</div>
+				<div class="grid gap-2">
+					<h4>FANS & VIERTEL</h4>
+					<p>Fanladen</p>
+					<p>Podcast</p>
+					<p>Stadtteilführung</p>
+				</div>
+				<div class="grid gap-2">
+					<h4>FCSP</h4>
+					<p>Team</p>
+					<p>Rabauken</p>
+					<p>Museum</p>
+				</div>
+				<div class="grid gap-2">
+					<h4>HILFE</h4>
+					<p>Bezahlung & Versand</p>
+					<p>Rücksendung & Retouren</p>
+					<p>FAQ</p>
+				</div>
+				<div class="flex items-end">
+					<div class="grid grid-cols-2 gap-2">
+						<img src="/St.-Pauli/assets/images/St. Pauli.png" alt="">
+						<img src="/St.-Pauli/assets/images/Totenkopf_Weiss.png" alt="">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
 	<div class="md:hidden  justify-center items-center ">
 		<div class="grid grid-cols-6 gap-16 mt-5">
 			<div class="col-span-3">
@@ -615,10 +810,10 @@
 			<div class="col-span-3">
 				<h4>SICHER BEZAHLEN</h4>
 				<div class="grid grid-cols-3 gap-2">
-					<img src="../assets/images/paypal.png" alt="">
-					<img src="../assets/images/visa.png" alt="">
-					<img src="../assets/images/mastercard.png" alt="">
-					<img src="../assets/images/elv.png" alt="">
+					<img src="/St.-Pauli/assets/images/paypal.png" alt="">
+					<img src="/St.-Pauli/assets/images/visa.png" alt="">
+					<img src="/St.-Pauli/assets/images/mastercard.png" alt="">
+					<img src="/St.-Pauli/assets/images/elv.png" alt="">
 				</div>
 			</div>
 			<div class="col-span-3">
@@ -666,8 +861,8 @@
 			</div>
 			<div class="flex items-end col-span-3">
 				<div class="grid grid-cols-2 gap-2">
-					<img src="../assets/images/St. Pauli.png" alt="">
-					<img src="../assets/images/Totenkopf_Weiss.png" alt="">
+					<img src="/St.-Pauli/assets/images/St. Pauli.png" alt="">
+					<img src="/St.-Pauli/assets/images/Totenkopf_Weiss.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -740,6 +935,21 @@
 	// Event listeners for mouseover and mouseout on the target element
 	targetElement.addEventListener('mouseover', toggleOtherElementClass);
 	targetElement.addEventListener('mouseout', toggleOtherElementClass);
+
+// Get the modal element
+
+
+// Function to open the modal
+function openModal() {
+	let modal = document.getElementById('myModal');
+  modal.classList.remove('hidden');
+}
+
+// Function to close the modal
+function closeModal() {
+	let modal = document.getElementById('myModal');
+  modal.classList.add('hidden');
+}
 
 
 

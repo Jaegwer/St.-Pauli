@@ -30,10 +30,10 @@
 					<div class=" main-dropdown">
 						<button class=" px-4 py-2 rounded ">
 							<span class="flag-icon flag-icon-de flag-icon-squared"></span> DE
-						  <i class="fas fa-chevron-down"></i>
+							<i class="fas fa-chevron-down"></i>
 						</button>
 
-					  </div>
+					</div>
 				</li>
 				<li>
 					<img src="/St.-Pauli/assets/images/Totenkopf_Weiss.png" alt="">
@@ -83,17 +83,18 @@
 					<div class="relative inline-block main-dropdown">
 						<button class="dropdown-toggle px-4 py-2 rounded " onclick="toggleDropdown()">
 							<span class="selected-text">Select an option</span>
-						  <i class="fas fa-chevron-down"></i>
+							<i class="fas fa-chevron-down"></i>
 						</button>
-						<ul class="dropdown-menu absolute z-10 hidden main-dropdown border border-gray-300 py-2 rounded mt-1" id="dropdownMenu">
-						  <li onclick="selectItem(this)" class="dropdown-item px-4 py-2 cursor-pointer ">
-							<span class="flag-icon flag-icon-de flag-icon-squared"></span> DE
-						  </li>
-						  <li onclick="selectItem(this)" class="dropdown-item px-4 py-2 cursor-pointer ">
-							<span class="flag-icon flag-icon-gb flag-icon-squared"></span> UK
-						  </li>
+						<ul class="dropdown-menu absolute z-10 hidden main-dropdown border border-gray-300 py-2 rounded mt-1"
+							id="dropdownMenu">
+							<li onclick="selectItem(this)" class="dropdown-item px-4 py-2 cursor-pointer ">
+								<span class="flag-icon flag-icon-de flag-icon-squared"></span> DE
+							</li>
+							<li onclick="selectItem(this)" class="dropdown-item px-4 py-2 cursor-pointer ">
+								<span class="flag-icon flag-icon-gb flag-icon-squared"></span> UK
+							</li>
 						</ul>
-					  </div>
+					</div>
 
 
 				</li>
@@ -473,7 +474,7 @@
 		<div class="relative hidden md:flex">
 			<img class="mx-auto" src="/St.-Pauli/assets/images/pauli-newsletter2.jpg" alt="">
 			<div class="absolute bottom-0   flex items-center justify-center w-full">
-				<input class="w-1/3" placeholder="Trage Deine E-Mail-Adresse ein" type="email">
+				<input id="email" class="w-1/3" placeholder="Trage Deine E-Mail-Adresse ein" type="email">
 
 			</div>
 		</div>
@@ -483,31 +484,41 @@
 				<input class="w-1/3" id="email" placeholder="Trage Deine E-Mail-Adresse ein" type="email">
 			</div>
 		</div>
-		<div class="relative">
-			<p class="bg-text t  text-center">INSTAGRAM SOCIAL MEDIA</p>
-			<div
-				class="text-sm md:text-5xl absolute bottom-0 left-0 w-full py-4 md:py-16 flex  items-center justify-center">
-				<i class="fab fa-instagram"></i>
-				<span class="mx-5">#DIESTRASSETRAEGTSTPAULI</span>
+		<div>
+			<div class="relative">
+				<p class="bg-text t  text-center">INSTAGRAM SOCIAL MEDIA</p>
+				<div
+					class="text-sm md:text-5xl absolute bottom-0 left-0 w-full py-4 md:py-16 flex  items-center justify-center">
+					<i class="fab fa-instagram"></i>
+					<span class="mx-5">#DIESTRASSETRAEGTSTPAULI</span>
+				</div>
 			</div>
+			<ul class="flex justify-around">
+				<li>
+					<img src="/St.-Pauli/assets/images/socialcarousel1.png" alt="">
+				</li>
+				<li>
+					<img src="/St.-Pauli/assets/images/socialcarousel2.png" alt="">
+				</li>
+				<li>
+					<img src="/St.-Pauli/assets/images/socialcarousel3.png" alt="">
+				</li>
+				<li class="md:flex hidden">
+					<img src="/St.-Pauli/assets/images/socialcarousel4.png" alt="">
+				</li>
+				<li class="md:flex hidden">
+					<img src="/St.-Pauli/assets/images/socialcarousel5.png" alt="">
+				</li>
+				<li class="md:flex hidden">
+					<img src="/St.-Pauli/assets/images/socialcarousel1.png" alt="">
+				</li>
+				<li class="md:flex hidden">
+					<img src="/St.-Pauli/assets/images/socialcarousel2.png" alt="">
+				</li>
+
+			</ul>
 		</div>
-		<ul class="flex justify-around">
-			<li>
-				<img src="/St.-Pauli/assets/images/socialcarousel1.png" alt="">
-			</li>
-			<li>
-				<img src="/St.-Pauli/assets/images/socialcarousel2.png" alt="">
-			</li>
-			<li>
-				<img src="/St.-Pauli/assets/images/socialcarousel3.png" alt="">
-			</li>
-			<li class="md:flex hidden">
-				<img src="/St.-Pauli/assets/images/socialcarousel4.png" alt="">
-			</li>
-			<li class="md:flex hidden">
-				<img src="/St.-Pauli/assets/images/socialcarousel5.png" alt="">
-			</li>
-		</ul>
+
 		<div class="partners mt-12 text-center p-4  md:hidden">
 			<span class=" text-3xl">PARTNER</span>
 			<div class="flex items-center justify-center">
@@ -537,27 +548,28 @@
 
 		</div>
 		<div class="partners mt-12 text-center p-12 hidden md:block">
-			<span class=" text-3xl">PARTNER</span>
+			<span class=" text-4xl">PARTNER</span>
 			<div class="flex items-center justify-center">
 				<div class="grid grid-cols-7 gap-2">
-					<div class="zoom-container col-span-5 bg-zinc-800 flex justify-center items-center">
+					<div class="zoom-container col-span-5  flex justify-center items-center">
 
 						<img class="zoom-in" src="../St.-Pauli/assets/images/congstar_logo.png" alt="">
 					</div>
-					<div class="col-span-2"><img src="../St.-Pauli/assets/images/partnersky.png" alt=""></div>
-					<div class="bg-zinc-800 zoom-container flex justify-center items-center"><img class="zoom-in"
+					<div class="col-span-2"><img class="w-full" src="../St.-Pauli/assets/images/partnersky.png" alt="">
+					</div>
+					<div class=" zoom-container flex justify-center items-center"><img class="zoom-in"
 							src="/St.-Pauli/assets/images/FollowFood.png" alt=""></div>
-					<div class="bg-zinc-800 zoom-container flex justify-center items-center"><img class="zoom-in"
+					<div class="zoom-container flex justify-center items-center"><img class="zoom-in"
 							src="/St.-Pauli/assets/images/Di!y.png" alt=""></div>
-					<div class="bg-zinc-800 zoom-container flex justify-center items-center"><img class="zoom-in"
+					<div class=" zoom-container p-12 flex justify-center items-center"><img class="zoom-in"
 							src="/St.-Pauli/assets/images/Astra.png" alt=""></div>
-					<div class="bg-zinc-800 zoom-container flex justify-center items-center"><img class="zoom-in"
+					<div class=" zoom-container flex justify-center items-center"><img class="zoom-in"
 							src="/St.-Pauli/assets/images/Levi's.png" alt=""></div>
-					<div class="bg-zinc-800 zoom-container flex justify-center items-center"><img class="zoom-in"
+					<div class=" zoom-container flex justify-center items-center"><img class="zoom-in"
 							src="/St.-Pauli/assets/images/Edeka.png" alt=""></div>
-					<div class="bg-zinc-800 zoom-container flex justify-center items-center"><img class="zoom-in"
+					<div class=" zoom-container flex justify-center items-center"><img class="zoom-in"
 							src="/St.-Pauli/assets/images/Bwin.png" alt=""></div>
-					<div class="bg-zinc-800 zoom-container flex justify-center items-center"><img class="zoom-in"
+					<div class=" zoom-container flex justify-center items-center"><img class="zoom-in"
 							src="/St.-Pauli/assets/images/Licht.png" alt=""></div>
 				</div>
 			</div>
@@ -566,75 +578,78 @@
 	</div>
 
 </body>
-<footer class="bg-zinc-800  mx-auto p-16">
-	<div class="hidden md:flex justify-center items-center ">
-		<div class="grid grid-cols-5 gap-16 mt-5">
-			<div>
-				<h4>NOCH FRAGEN?</h4>
-				<p><i class="fas fa-envelope"></i>info@fcsp-shop.com</p>
-				<p><i class="fas fa-phone"></i>040 317 874 888</p>
-				<p><i class="fas fa-clock"></i>Mo - Fr 10 - 17:00 Uhr</p>
-			</div>
-			<div>
-				<h4>SICHER BEZAHLEN</h4>
-				<div class="grid grid-cols-3 gap-2">
-					<img src="/St.-Pauli/assets/images/paypal.png" alt="">
-					<img src="/St.-Pauli/assets/images/visa.png" alt="">
-					<img src="/St.-Pauli/assets/images/mastercard.png" alt="">
-					<img src="/St.-Pauli/assets/images/elv.png" alt="">
+<footer class=" p-16">
+	<div class="ml-16">
+		<div class="hidden md:flex justify-center items-center ">
+			<div class="grid grid-cols-5 gap-10 mt-5">
+				<div class="grid gap-2">
+					<h4>NOCH FRAGEN?</h4>
+					<p><i class="fas fa-envelope"></i> info@fcsp-shop.com</p>
+					<p><i class="fas fa-phone"></i> 040 317 874 888</p>
+					<p><i class="fas fa-clock"></i> Mo - Fr 10 - 17:00 Uhr</p>
 				</div>
-			</div>
-			<div>
-				<h4>UNSERE STORES</h4>
-				<p>Harald-Stender-Platz 1</p>
-				<p>20359 Sankt Pauli</p>
-				<p>Mo - Fr 10 - 17:00 Uhr</p>
-			</div>
-			<div class="flex items-end">
-				<div class="grid grid-cols-1">
-					<p>Reeperbahn 63-65</p>
-					<p>20359 Hamburg</p>
+				<div class="grid gap-2">
+					<h4>SICHER BEZAHLEN</h4>
+					<div class="grid grid-cols-3 gap-2">
+						<img src="/St.-Pauli/assets/images/paypal.png" alt="">
+						<img src="/St.-Pauli/assets/images/visa.png" alt="">
+						<img src="/St.-Pauli/assets/images/mastercard.png" alt="">
+						<img src="/St.-Pauli/assets/images/elv.png" alt="">
+					</div>
+				</div>
+				<div class="grid gap-2">
+					<h4>UNSERE STORES</h4>
+					<p>Harald-Stender-Platz 1</p>
+					<p>20359 Sankt Pauli</p>
 					<p>Mo - Fr 10 - 17:00 Uhr</p>
 				</div>
-			</div>
-			<div>
-				<h4>FC ST. PAULI</h4>
-				<p>AGB</p>
-				<p>Datenschutz</p>
-				<p>Impressum</p>
-			</div>
-			<div>
-				<h4>FCSP-SHOPS</h4>
-				<p>Die Shops</p>
-				<p>Öffnungszeiten</p>
-				<p>Anfahrt</p>
-			</div>
-			<div>
-				<h4>FANS & VIERTEL</h4>
-				<p>Fanladen</p>
-				<p>Podcast</p>
-				<p>Stadtteilführung</p>
-			</div>
-			<div>
-				<h4>FCSP</h4>
-				<p>Team</p>
-				<p>Rabauken</p>
-				<p>Museum</p>
-			</div>
-			<div>
-				<h4>HILFE</h4>
-				<p>Bezahlung & Versand</p>
-				<p>Rücksendung & Retouren</p>
-				<p>FAQ</p>
-			</div>
-			<div class="flex items-end">
-				<div class="grid grid-cols-2 gap-2">
-					<img src="/St.-Pauli/assets/images/St. Pauli.png" alt="">
-					<img src="/St.-Pauli/assets/images/Totenkopf_Weiss.png" alt="">
+				<div class="flex items-end">
+					<div class="grid grid-cols-1 gap-2">
+						<p>Reeperbahn 63-65</p>
+						<p>20359 Hamburg</p>
+						<p>Mo - Fr 10 - 17:00 Uhr</p>
+					</div>
+				</div>
+				<div class="grid gap-2">
+					<h4>FC ST. PAULI</h4>
+					<p>AGB</p>
+					<p>Datenschutz</p>
+					<p>Impressum</p>
+				</div>
+				<div class="grid gap-2">
+					<h4>FCSP-SHOPS</h4>
+					<p>Die Shops</p>
+					<p>Öffnungszeiten</p>
+					<p>Anfahrt</p>
+				</div>
+				<div class="grid gap-2">
+					<h4>FANS & VIERTEL</h4>
+					<p>Fanladen</p>
+					<p>Podcast</p>
+					<p>Stadtteilführung</p>
+				</div>
+				<div class="grid gap-2">
+					<h4>FCSP</h4>
+					<p>Team</p>
+					<p>Rabauken</p>
+					<p>Museum</p>
+				</div>
+				<div class="grid gap-2">
+					<h4>HILFE</h4>
+					<p>Bezahlung & Versand</p>
+					<p>Rücksendung & Retouren</p>
+					<p>FAQ</p>
+				</div>
+				<div class="flex items-end">
+					<div class="grid grid-cols-2 gap-2">
+						<img src="/St.-Pauli/assets/images/St. Pauli.png" alt="">
+						<img src="/St.-Pauli/assets/images/Totenkopf_Weiss.png" alt="">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
 	<div class="md:hidden  justify-center items-center ">
 		<div class="grid grid-cols-6 gap-16 mt-5">
 			<div class="col-span-3">
@@ -707,71 +722,71 @@
 
 </html>
 <script>
-function toggleDropdown() {
-  var dropdownMenu = document.getElementById('dropdownMenu');
-  dropdownMenu.classList.toggle('hidden');
-  var dropdownToggleIcon = document.querySelector('.dropdown-toggle i.fa-chevron-down');
-  dropdownToggleIcon.classList.toggle('fa-chevron-up');
-}
+	function toggleDropdown() {
+		var dropdownMenu = document.getElementById('dropdownMenu');
+		dropdownMenu.classList.toggle('hidden');
+		var dropdownToggleIcon = document.querySelector('.dropdown-toggle i.fa-chevron-down');
+		dropdownToggleIcon.classList.toggle('fa-chevron-up');
+	}
 
-function selectItem(item) {
-  var dropdownToggle = document.querySelector('.dropdown-toggle');
-  var selectedText = item.textContent.trim();
-  var selectedIcon = item.querySelector('.flag-icon');
-  var dropdownToggleIcon = dropdownToggle.querySelector('.fa-chevron-down');
-  var dropdownToggleText = dropdownToggle.querySelector('.selected-text');
+	function selectItem(item) {
+		var dropdownToggle = document.querySelector('.dropdown-toggle');
+		var selectedText = item.textContent.trim();
+		var selectedIcon = item.querySelector('.flag-icon');
+		var dropdownToggleIcon = dropdownToggle.querySelector('.fa-chevron-down');
+		var dropdownToggleText = dropdownToggle.querySelector('.selected-text');
 
-  if (dropdownToggleText) {
-    dropdownToggleText.textContent = selectedText;
-  }
+		if (dropdownToggleText) {
+			dropdownToggleText.textContent = selectedText;
+		}
 
-  // Remove existing flag icon classes from the dropdown toggle
-  var dropdownToggleFlagIcon = dropdownToggle.querySelector('.flag-icon');
-  if (dropdownToggleFlagIcon) {
-    dropdownToggleFlagIcon.parentNode.removeChild(dropdownToggleFlagIcon);
-  }
+		// Remove existing flag icon classes from the dropdown toggle
+		var dropdownToggleFlagIcon = dropdownToggle.querySelector('.flag-icon');
+		if (dropdownToggleFlagIcon) {
+			dropdownToggleFlagIcon.parentNode.removeChild(dropdownToggleFlagIcon);
+		}
 
-  // Clone the selected icon and append it to the dropdown toggle
-  if (selectedIcon) {
-    var clonedIcon = selectedIcon.cloneNode(true);
-    dropdownToggle.insertBefore(clonedIcon, dropdownToggle.firstChild);
-  }
+		// Clone the selected icon and append it to the dropdown toggle
+		if (selectedIcon) {
+			var clonedIcon = selectedIcon.cloneNode(true);
+			dropdownToggle.insertBefore(clonedIcon, dropdownToggle.firstChild);
+		}
 
-  toggleDropdown();
-}
+		toggleDropdown();
+	}
 
-// Close the dropdown when clicking outside of it
-window.addEventListener('click', function (event) {
-  var dropdownMenu = document.getElementById('dropdownMenu');
-  var dropdownToggle = document.querySelector('.dropdown-toggle');
-  var dropdownToggleIcon = dropdownToggle.querySelector('.fa-chevron-down');
+	// Close the dropdown when clicking outside of it
+	window.addEventListener('click', function (event) {
+		var dropdownMenu = document.getElementById('dropdownMenu');
+		var dropdownToggle = document.querySelector('.dropdown-toggle');
+		var dropdownToggleIcon = dropdownToggle.querySelector('.fa-chevron-down');
 
-  if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
-    dropdownMenu.classList.add('hidden');
-    if (dropdownToggleIcon.classList.contains('fa-chevron-up')) {
-      dropdownToggleIcon.classList.remove('fa-chevron-up');
-    }
-  }
-});
+		if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+			dropdownMenu.classList.add('hidden');
+			if (dropdownToggleIcon.classList.contains('fa-chevron-up')) {
+				dropdownToggleIcon.classList.remove('fa-chevron-up');
+			}
+		}
+	});
 
-function toggleHidden() {
-  var myElement = document.getElementById('myElement');
-  var myButton = document.getElementById('active');
-  myButton.classList.toggle('underline');
-  myElement.classList.toggle('hidden');
-}
-var targetElement = document.getElementById('targetElement');
-var otherElement = document.getElementById('show-list1');
+	function toggleHidden() {
+		var myElement = document.getElementById('myElement');
+		var myButton = document.getElementById('active');
+		myButton.classList.toggle('underline');
+		myElement.classList.toggle('hidden');
+	}
+	var targetElement = document.getElementById('targetElement');
+	var otherElement = document.getElementById('show-list1');
 
-// Function to change the class of the other element when hovering
-function toggleOtherElementClass() {
-  otherElement.classList.toggle('hidden');
+	// Function to change the class of the other element when hovering
+	function toggleOtherElementClass() {
+		otherElement.classList.toggle('hidden');
 
-}
+	}
 
-// Event listeners for mouseover and mouseout on the target element
-targetElement.addEventListener('mouseover', toggleOtherElementClass);
-targetElement.addEventListener('mouseout', toggleOtherElementClass);
+	// Event listeners for mouseover and mouseout on the target element
+	targetElement.addEventListener('mouseover', toggleOtherElementClass);
+	targetElement.addEventListener('mouseout', toggleOtherElementClass);
 
 
 
