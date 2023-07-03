@@ -89,12 +89,12 @@ nav{
 .hover-img{
 	width: 16rem;
 	height: 23rem;
-  background-image: url("/assets/images/bestseller1.png");
+  background-image: url("/St.-Pauli/assets/images/bestseller1.png");
   background-size: cover;
   transition: background-image 0.3s ease;
 }
 .hover-img:hover {
-	background-image: url("/assets/images/bestseller3.png");
+	background-image: url("/St.-Pauli/assets/images/bestseller3.png");
 }
 
 .size-select button{
