@@ -51,6 +51,9 @@ nav{
 	color: #ffffff;
 
 }
+.sale-red{
+	color: #C90000;
+}
 .medium a{
 	font-family: 'Futura PT Medium', sans-serif;
 }
@@ -61,6 +64,10 @@ nav{
 }
 .main-dropdown i{
 	color: #707070;
+}
+.dropdown-text{
+	font-family: 'Futura PT Medium', sans-serif;
+	font-size: 0.9rem;
 }
 .bold{
 	font-family: 'Futura PT Bold', sans-serif !important;
@@ -82,12 +89,12 @@ nav{
 .hover-img{
 	width: 16rem;
 	height: 23rem;
-  background-image: url("/St.-Pauli/assets/images/bestseller1.png");
+  background-image: url("/assets/images/bestseller1.png");
   background-size: cover;
   transition: background-image 0.3s ease;
 }
 .hover-img:hover {
-	background-image: url("/St.-Pauli/assets/images/bestseller3.png");
+	background-image: url("/assets/images/bestseller3.png");
 }
 
 .size-select button{
@@ -135,6 +142,9 @@ footer h4{
 }
 #email::placeholder{
 	text-align: center;
+}
+#email{
+	width: 90%;
 }
 .side-content p{
 	font-size: 1.5rem;
@@ -255,3 +265,62 @@ font-size: 1.2rem;
 .font-nova-rg{
 	font-family: 'Proxima Nova Regular', sans-serif !important;
 }
+
+/* dropdown */
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .custom-dropdown select {
+    display: none;
+  }
+
+  .custom-dropdown .selected-option {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 0.5px solid #ccc;
+    cursor: pointer;
+  }
+
+  .custom-dropdown .selected-option .custom-content {
+    margin-right: 5px;
+  }
+
+  .custom-dropdown .selected-option .flag-icon {
+    margin-right: 5px;
+  }
+
+  .custom-dropdown .selected-option .chevron-icon {
+    margin-left: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .custom-dropdown.open .selected-option .chevron-icon {
+    transform: rotate(180deg);
+  }
+
+  .custom-dropdown .dropdown-menu {
+    position: absolute;
+    z-index: 10;
+    display: none;
+    border: 0.5px solid #ccc;
+    border-radius: 4px;
+    background-color: black;
+  }
+
+  .custom-dropdown.open .dropdown-menu {
+    display: block;
+  }
+
+  .custom-dropdown .dropdown-menu .dropdown-item {
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .custom-dropdown .dropdown-menu .dropdown-item .flag-icon {
+    margin-right: 5px;
+  }
