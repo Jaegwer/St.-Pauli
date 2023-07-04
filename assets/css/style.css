@@ -1,7 +1,7 @@
 
 @font-face {
 	font-family: 'Futura PT Bold';
-	src: url('../fonts/Futura Pt/FuturaPTBold.otf') format('opentype');
+	src: url('https://github.com/Jaegwer/St.-Pauli/blob/main/Futura%20PT/FuturaPTBold.otf') format('opentype');
 	/* Additional font formats and styles can be defined here */
   }
 @font-face {
