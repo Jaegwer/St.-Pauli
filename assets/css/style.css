@@ -44,7 +44,9 @@ header{
 	background-color: #EC1B24;
 }
 header p{
-	font-family: 'futura-pt-heavy', sans-serif;
+	font-family: "futura-pt", sans-serif;
+font-weight: 700;
+font-style: normal;
 }
 nav{
 	background-color: #0A0A0A;
@@ -55,7 +57,9 @@ nav{
 	color: #C90000;
 }
 .medium a{
-	font-family: 'futura-pt-medium', sans-serif;
+	font-family: "futura-pt", sans-serif;
+	font-weight: 500;
+	font-style: normal;
 }
 .main-dropdown{
 	background-color: #1B1B1B;
@@ -66,14 +70,18 @@ nav{
 	color: #707070;
 }
 .dropdown-text{
-	font-family: 'futura-pt-medium', sans-serif;
+	font-family: "futura-pt", sans-serif;
+	font-weight: 500;
+	font-style: normal;
 	font-size: 0.9rem;
 }
 .bold{
 	font-family: "futura-pt-bold", sans-serif;
 }
 #search-box::placeholder {
-    font-family: 'futura-pt-medium', sans-serif;
+	font-family: "futura-pt", sans-serif;
+	font-weight: 500;
+	font-style: normal;
     color: #6F6F6F;
 	background-image: url('../images/search.png');
     background-repeat: no-repeat;
@@ -134,7 +142,9 @@ i {
 }
 footer p{
 	color: #C1C1C1;
-	font-family: 'futura-pt-medium', sans-serif !important;
+	font-family: "futura-pt", sans-serif !important;
+	font-weight: 500;
+	font-style: normal;
 }
 footer h4{
 	color: #FFFFFF;
@@ -208,7 +218,9 @@ footer{
 	background-color: #222222;
 }
 #email::placeholder {
-    font-family: 'futura-pt-medium', sans-serif;
+	font-family: "futura-pt", sans-serif;
+	font-weight: 500;
+	font-style: normal;
     color: #6F6F6F;
 	background-image: url('../images/mail.png');
     background-repeat: no-repeat;
@@ -258,7 +270,9 @@ font-weight: 400;
 font-style: normal;
 }
 .font-md{
-	font-family: 'futura-pt-medium', sans-serif !important;
+	font-family: "futura-pt", sans-serif;
+font-weight: 500;
+font-style: normal;
 }
 .font-nova-bold{
 	font-family: 'Proxima Nova Bold', sans-serif !important;
