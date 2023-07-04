@@ -12,101 +12,161 @@
 	<link rel="stylesheet" href="/St.-Pauli/assets/css/style.css">
 </head>
 <header>
-	<div class="text-center  text-white">
-		<p>GRATIS VERSAND AB EINEN BESTELLWERT VON 60 €</p>
-	</div>
-	<nav class="grid grid-cols-2 gap-36 ">
-		<div class="md:hidden  col-span-2">
-			<ul class="flex justify-between items-center p-2">
-				<li class="items-center flex"><button type="button"
-						class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
-						<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-								d="M4 6h16M4 12h16M4 18h16"></path>
-						</svg>
-					</button>
-					<div class=" main-dropdown">
-						<button class=" px-4 py-2 rounded ">
-							<span class="flag-icon flag-icon-de flag-icon-squared"></span> DE
-						  <i class="fas fa-chevron-down"></i>
+    <div class="text-center text-white">
+      <p>GRATIS VERSAND AB EINEN BESTELLWERT VON 60 €</p>
+    </div>
+    <nav class="grid grid-cols-2 gap-36">
+      <div class="md:hidden col-span-2">
+        <ul class="flex justify-between items-center p-2">
+          <li class="items-center flex">
+            <button
+              type="button"
+              class="text-gray-300 hover:text-white focus:outline-none focus:text-white"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+            <div class="main-dropdown">
+              <button class="px-4 py-2 rounded">
+                <span class="flag-icon flag-icon-de flag-icon-squared"></span>
+                DE
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+          </li>
+          <li>
+            <img src="/St.-Pauli/assets/images/Totenkopf_Weiss.png" alt="" />
+          </li>
+          <li>
+            <a href="">
+              <img src="/St.-Pauli/assets/images/shop.png" alt="" />
+            </a>
+          </li>
+        </ul>
+
+        <div></div>
+      </div>
+
+      <div class="mt-5 hidden md:block">
+        <ul class="flex justify-around items-end medium">
+          <li>
+            <img src="/St.-Pauli/assets/images/Totenkopf_Weiss.png" alt="" />
+          </li>
+          <li>
+            <a href="">NEU</a>
+          </li>
+          <li>
+            <button id="active" onclick="toggleHidden()" class="bold" href="">
+              BEKLEIDUNG
+            </button>
+          </li>
+          <li>
+            <a href="">FANARTIKEL</a>
+          </li>
+          <li>
+            <a href="">THEMENWELTEN</a>
+          </li>
+          <li class="sale-red">
+            <a href="">SALE</a>
+          </li>
+        </ul>
+      </div>
+      <div class="m-5 hidden md:block">
+        <ul class="flex justify-evenly items-center text-black">
+          <li>
+            <input
+              class="w-80"
+              id="search-box"
+              placeholder=" Wonach Suchst Du?"
+              type="text"
+            />
+          </li>
+          <li>
+            <div class="relative inline-block main-dropdown">
+              <button class="dropdown-toggle px-4 py-2 rounded " onclick="toggleDropdown()">
+
+				<span class="flag-icon flag-icon-de flag-icon-squared"></span>
+				<span class="selected-text dropdown-text">DE</span>
+				<i class="fas fa-chevron-down"></i>
 						</button>
-
-					  </div>
-				</li>
-				<li>
-					<img src="/assets/images/Totenkopf_Weiss.png" alt="">
-				</li>
-				<li>
-					<a href="">
-						<img src="/assets/images/shop.png" alt="">
-					</a>
-				</li>
-			</ul>
-
-			<div>
-
-			</div>
-		</div>
-
-		<div class="m-5 hidden md:block">
-			<ul class="flex justify-around items-end medium">
-				<li>
-					<img src="/assets/images/Totenkopf_Weiss.png" alt="">
-
-				</li>
-				<li>
-					<a href="">NEU</a>
-				</li>
-				<li>
-					<button id="active" onclick="toggleHidden()" class="bold" href="">BEKLEIDUNG</button>
-				</li>
-				<li>
-					<a href="">FANARTIKEL</a>
-				</li>
-				<li>
-					<a href="">THEMENWELTEN</a>
-				</li>
-				<li class="text-red-600">
-					<a href="">SALE</a>
-				</li>
-			</ul>
-		</div>
-		<div class="m-5 hidden md:block">
-			<ul class="flex justify-evenly  items-center text-black">
-				<li>
-					<input class="w-80" id="search-box"
-						placeholder="&#xf002;&#xf002;&#xf002;&#xf002;&#xf002;&#xf002; Wonach Suchst Du?" type="text">
-				</li>
-				<li>
-					<div class="relative inline-block main-dropdown">
-						<button class="dropdown-toggle px-4 py-2 rounded " onclick="toggleDropdown()">
-							<span class="selected-text">Select an option</span>
-						  <i class="fas fa-chevron-down"></i>
-						</button>
-						<ul class="dropdown-menu absolute z-10 hidden main-dropdown border border-gray-300 py-2 rounded mt-1" id="dropdownMenu">
-						  <li onclick="selectItem(this)" class="dropdown-item px-4 py-2 cursor-pointer ">
-							<span class="flag-icon flag-icon-de flag-icon-squared"></span> DE
-						  </li>
-						  <li onclick="selectItem(this)" class="dropdown-item px-4 py-2 cursor-pointer ">
-							<span class="flag-icon flag-icon-gb flag-icon-squared"></span> UK
-						  </li>
+						<ul class="dropdown-menu absolute z-10 hidden main-dropdown border border-gray-300 py-2 rounded mt-1"
+							id="dropdownMenu">
+							<li onclick="selectItem(this)" class="dropdown-item px-4 py-2 cursor-pointer ">
+								<span class="flag-icon flag-icon-de flag-icon-squared"></span> <span class="dropdown-text">DE</span>
+							</li>
+							<li onclick="selectItem(this)" class="dropdown-item px-4 py-2 cursor-pointer ">
+								<span class="flag-icon flag-icon-gb flag-icon-squared"></span> <span class="dropdown-text">UK</span>
+							</li>
 						</ul>
-					  </div>
-
-
-				</li>
-				<li>
-					<img src="/assets/images/8324223_ui_essential_app_avatar_profile_icon (1).png" alt="">
-				</li>
-				<li>
-					<a href="">
-						<img src="/assets/images/shop.png" alt="">
-					</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-</header>
+              <!-- <div class="custom-dropdown text-white">
+                <div class="selected-option">
+                  <span class="custom-content"></span>
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+                <ul class="dropdown-menu">
+                  <li
+                    class="dropdown-item"
+                    data-value="DE"
+                    data-custom-class="custom-class1"
+                  >
+                    <span
+                      class="flag-icon flag-icon-de flag-icon-squared"
+                    ></span>
+                    DE
+                  </li>
+                  <li
+                    class="dropdown-item"
+                    data-value="UK"
+                    data-custom-class="custom-class2"
+                  >
+                    <span
+                      class="flag-icon flag-icon-gb flag-icon-squared"
+                    ></span>
+                    UK
+                  </li>
+                </ul>
+                <select style="display: none">
+                  <option value="DE" data-custom-class="custom-class1" selected>
+                    DE
+                  </option>
+                  <option value="UK" data-custom-class="custom-class2">
+                    UK
+                  </option>
+                </select>
+              </div> -->
+            </div>
+          </li>
+          <li>
+            <img
+              src="/St.-Pauli/assets/images/8324223_ui_essential_app_avatar_profile_icon (1).png"
+              alt="avatar profile"
+            />
+          </li>
+          <li>
+            <a class="relative inline-flex items-center flow-root" href="">
+              <img src="/St.-Pauli/assets/images/shop.png" alt="shop image" />
+              <div
+                class="absolute inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-white bg-red-500 rounded-full -top-1 -right-1"
+              >
+                3
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
 <body>
 	<div class="relative">
@@ -318,6 +378,7 @@
 
 		</div>
 	</div>
+	<script src="/St.-Pauli/js/script.js"></script>
 </body>
 <footer class=" p-16">
 	<div class="ml-16">
@@ -462,76 +523,3 @@
 </footer>
 
 </html>
-<script>
-	function toggleDropdown() {
-	  var dropdownMenu = document.getElementById('dropdownMenu');
-	  dropdownMenu.classList.toggle('hidden');
-	  var dropdownToggleIcon = document.querySelector('.dropdown-toggle i.fa-chevron-down');
-	  dropdownToggleIcon.classList.toggle('fa-chevron-up');
-	}
-
-	function selectItem(item) {
-	  var dropdownToggle = document.querySelector('.dropdown-toggle');
-	  var selectedText = item.textContent.trim();
-	  var selectedIcon = item.querySelector('.flag-icon');
-	  var dropdownToggleIcon = dropdownToggle.querySelector('.fa-chevron-down');
-	  var dropdownToggleText = dropdownToggle.querySelector('.selected-text');
-
-	  if (dropdownToggleText) {
-		dropdownToggleText.textContent = selectedText;
-	  }
-
-	  // Remove existing flag icon classes from the dropdown toggle
-	  var dropdownToggleFlagIcon = dropdownToggle.querySelector('.flag-icon');
-	  if (dropdownToggleFlagIcon) {
-		dropdownToggleFlagIcon.parentNode.removeChild(dropdownToggleFlagIcon);
-	  }
-
-	  // Clone the selected icon and append it to the dropdown toggle
-	  if (selectedIcon) {
-		var clonedIcon = selectedIcon.cloneNode(true);
-		dropdownToggle.insertBefore(clonedIcon, dropdownToggle.firstChild);
-	  }
-
-	  toggleDropdown();
-	}
-
-	// Close the dropdown when clicking outside of it
-	window.addEventListener('click', function (event) {
-	  var dropdownMenu = document.getElementById('dropdownMenu');
-	  var dropdownToggle = document.querySelector('.dropdown-toggle');
-	  var dropdownToggleIcon = dropdownToggle.querySelector('.fa-chevron-down');
-
-	  if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
-		dropdownMenu.classList.add('hidden');
-		if (dropdownToggleIcon.classList.contains('fa-chevron-up')) {
-		  dropdownToggleIcon.classList.remove('fa-chevron-up');
-		}
-	  }
-	});
-
-	function toggleHidden() {
-	  var myElement = document.getElementById('myElement');
-	  var myButton = document.getElementById('active');
-	  myButton.classList.toggle('underline');
-	  myElement.classList.toggle('hidden');
-	}
-	var targetElement = document.getElementById('targetElement');
-	var otherElement = document.getElementById('show-list1');
-
-	// Function to change the class of the other element when hovering
-	function toggleOtherElementClass() {
-	  otherElement.classList.toggle('hidden');
-
-	}
-
-	// Event listeners for mouseover and mouseout on the target element
-	targetElement.addEventListener('mouseover', toggleOtherElementClass);
-	targetElement.addEventListener('mouseout', toggleOtherElementClass);
-
-
-
-
-
-
-	</script>
