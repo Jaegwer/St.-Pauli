@@ -86,6 +86,7 @@ nav{
 	background-image: url('../images/search.png');
     background-repeat: no-repeat;
 	background-position: left center;
+	padding-left: 30px;
   }
 #search-box{
 	color: black;
