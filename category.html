@@ -12,161 +12,155 @@
 	<title>Document</title>
 </head>
 <header>
-    <div class="text-center text-white">
-      <p>GRATIS VERSAND AB EINEN BESTELLWERT VON 60 €</p>
-    </div>
-    <nav class="grid grid-cols-2 gap-36">
-      <div class="md:hidden col-span-2">
-        <ul class="flex justify-between items-center p-2">
-          <li class="items-center flex">
-            <button
-              type="button"
-              class="text-gray-300 hover:text-white focus:outline-none focus:text-white"
-            >
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-            </button>
-            <div class="main-dropdown">
-              <button class="px-4 py-2 rounded">
-                <span class="flag-icon flag-icon-de flag-icon-squared"></span>
-                DE
-                <i class="fas fa-chevron-down"></i>
-              </button>
-            </div>
-          </li>
-          <li>
-            <img src="/St.-Pauli/assets/images/Totenkopf_Weiss.png" alt="" />
-          </li>
-          <li>
-            <a href="">
-              <img src="/St.-Pauli/assets/images/shop.png" alt="" />
-            </a>
-          </li>
-        </ul>
 
-        <div></div>
-      </div>
+	<div id="market" class="modal hidden fixed inset-0 bg-gray-500 bg-opacity-75 flex items-start justify-end">
+		<div class="modal-content bg-black w-128 max-h-screen h-full grid ">
+			<button onclick="closeModal()" id="closeModal" class="justify-self-end text-white">X</button>
+		  <img src="/St.-Pauli/assets/images/Gruppe 173169.png" alt="">
+		</div>
+	  </div>
+<div class="text-center text-white">
+	<p>GRATIS VERSAND AB EINEN BESTELLWERT VON 60 €</p>
+</div>
+<nav class="grid grid-cols-2 gap-36">
+	<div class="md:hidden col-span-2">
+		<ul class="flex justify-between items-center p-2">
+			<li class="items-center flex">
+				<button onclick="toggleNav()" type="button"
+					class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+					<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M4 6h16M4 12h16M4 18h16"></path>
+					</svg>
+				</button>
+				<div class="main-dropdown ml-3">
+					<button class="px-2 rounded">
+						<span class="flag-icon flag-icon-de flag-icon-squared"></span>
+						DE
+						<i class="fas fa-chevron-down"></i>
+					</button>
+				</div>
+			</li>
+			<li>
+				<img src="/St.-Pauli/assets/images/Totenkopf_Weiss.png" alt="" />
+			</li>
+			<li class="flex items-center">
+				<a>
+					<img src="/St.-Pauli/assets/images/search-nav.png" alt="" />
+				</a>
+				<button onclick="toggleMarket()" class="ml-5">
+					<img src="/St.-Pauli/assets/images/shop.png" alt="" />
+				</button>
 
-      <div class="mt-5 hidden md:block">
-        <ul class="flex justify-around items-end medium">
-          <li>
-            <img src="/St.-Pauli/assets/images/Totenkopf_Weiss.png" alt="" />
-          </li>
-          <li>
-            <a href="">NEU</a>
-          </li>
-          <li>
-            <button id="active" onclick="toggleHidden()" class="bold" href="">
-              BEKLEIDUNG
-            </button>
-          </li>
-          <li>
-            <a href="">FANARTIKEL</a>
-          </li>
-          <li>
-            <a href="">THEMENWELTEN</a>
-          </li>
-          <li class="sale-red">
-            <a href="">SALE</a>
-          </li>
-        </ul>
-      </div>
-      <div class="m-5 hidden md:block">
-        <ul class="flex justify-evenly items-center text-black">
-          <li>
-            <input
-              class="w-80"
-              id="search-box"
-              placeholder=" Wonach Suchst Du?"
-              type="text"
-            />
-          </li>
-          <li>
-            <div class="relative inline-block main-dropdown">
-              <button class="dropdown-toggle px-4 py-2 rounded " onclick="toggleDropdown()">
+			</li>
+		</ul>
 
-				<span class="flag-icon flag-icon-de flag-icon-squared"></span>
-				<span class="selected-text dropdown-text">DE</span>
-				<i class="fas fa-chevron-down"></i>
-						</button>
-						<ul class="dropdown-menu absolute z-10 hidden main-dropdown border border-gray-300 py-2 rounded mt-1"
-							id="dropdownMenu">
-							<li onclick="selectItem(this)" class="dropdown-item px-4 py-2 cursor-pointer ">
-								<span class="flag-icon flag-icon-de flag-icon-squared"></span> <span class="dropdown-text">DE</span>
-							</li>
-							<li onclick="selectItem(this)" class="dropdown-item px-4 py-2 cursor-pointer ">
-								<span class="flag-icon flag-icon-gb flag-icon-squared"></span> <span class="dropdown-text">UK</span>
-							</li>
-						</ul>
-              <!-- <div class="custom-dropdown text-white">
-                <div class="selected-option">
-                  <span class="custom-content"></span>
-                  <i class="fas fa-chevron-down"></i>
-                </div>
-                <ul class="dropdown-menu">
-                  <li
-                    class="dropdown-item"
-                    data-value="DE"
-                    data-custom-class="custom-class1"
-                  >
-                    <span
-                      class="flag-icon flag-icon-de flag-icon-squared"
-                    ></span>
-                    DE
-                  </li>
-                  <li
-                    class="dropdown-item"
-                    data-value="UK"
-                    data-custom-class="custom-class2"
-                  >
-                    <span
-                      class="flag-icon flag-icon-gb flag-icon-squared"
-                    ></span>
-                    UK
-                  </li>
-                </ul>
-                <select style="display: none">
-                  <option value="DE" data-custom-class="custom-class1" selected>
-                    DE
-                  </option>
-                  <option value="UK" data-custom-class="custom-class2">
-                    UK
-                  </option>
-                </select>
-              </div> -->
-            </div>
-          </li>
-          <li>
-            <img
-              src="/St.-Pauli/assets/images/8324223_ui_essential_app_avatar_profile_icon (1).png"
-              alt="avatar profile"
-            />
-          </li>
-          <li>
-            <a class="relative inline-flex items-center flow-root" href="">
-              <img src="/St.-Pauli/assets/images/shop.png" alt="shop image" />
-              <div
-                class="absolute inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-white bg-red-500 rounded-full -top-1 -right-1"
-              >
-                3
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+		<div></div>
+	</div>
+
+	<div class="mt-5 hidden md:block">
+		<ul class="flex justify-around items-end medium">
+			<li>
+				<img src="/St.-Pauli/assets/images/Totenkopf_Weiss.png" alt="" />
+			</li>
+			<li>
+				<a href="">NEU</a>
+			</li>
+			<li>
+				<button id="active" onclick="toggleHidden()" class="bold" href="">
+					BEKLEIDUNG
+				</button>
+			</li>
+			<li>
+				<a href="">FANARTIKEL</a>
+			</li>
+			<li>
+				<a href="">THEMENWELTEN</a>
+			</li>
+			<li class="sale-red">
+				<a href="">SALE</a>
+			</li>
+		</ul>
+	</div>
+	<div class="m-5 hidden md:block">
+		<ul class="flex justify-evenly items-center text-black">
+			<li>
+				<input class="w-80" id="search-box" placeholder=" Wonach Suchst Du?" type="text" />
+			</li>
+			<li>
+				<div class="relative inline-block main-dropdown">
+					<button class="dropdown-toggle px-4 py-2 rounded " onclick="toggleDropdown()">
+
+						<span class="flag-icon flag-icon-de flag-icon-squared"></span>
+						<span class="selected-text dropdown-text">DE</span>
+						<i class="fas fa-chevron-down"></i>
+					</button>
+					<ul class="dropdown-menu absolute z-10 hidden main-dropdown border border-gray-300 py-2 rounded mt-1"
+						id="dropdownMenu">
+						<li onclick="selectItem(this)" class="dropdown-item px-4 py-2 cursor-pointer ">
+							<span class="flag-icon flag-icon-de flag-icon-squared"></span> <span
+								class="dropdown-text">DE</span>
+						</li>
+						<li onclick="selectItem(this)" class="dropdown-item px-4 py-2 cursor-pointer ">
+							<span class="flag-icon flag-icon-gb flag-icon-squared"></span> <span
+								class="dropdown-text">UK</span>
+						</li>
+					</ul>
+					<!-- <div class="custom-dropdown text-white">
+			<div class="selected-option">
+			  <span class="custom-content"></span>
+			  <i class="fas fa-chevron-down"></i>
+			</div>
+			<ul class="dropdown-menu">
+			  <li
+				class="dropdown-item"
+				data-value="DE"
+				data-custom-class="custom-class1"
+			  >
+				<span
+				  class="flag-icon flag-icon-de flag-icon-squared"
+				></span>
+				DE
+			  </li>
+			  <li
+				class="dropdown-item"
+				data-value="UK"
+				data-custom-class="custom-class2"
+			  >
+				<span
+				  class="flag-icon flag-icon-gb flag-icon-squared"
+				></span>
+				UK
+			  </li>
+			</ul>
+			<select style="display: none">
+			  <option value="DE" data-custom-class="custom-class1" selected>
+				DE
+			  </option>
+			  <option value="UK" data-custom-class="custom-class2">
+				UK
+			  </option>
+			</select>
+		  </div> -->
+				</div>
+			</li>
+			<li>
+				<img src="/St.-Pauli/assets/images/8324223_ui_essential_app_avatar_profile_icon (1).png"
+					alt="avatar profile" />
+			</li>
+			<li>
+				<a class="relative inline-flex items-center flow-root" href="">
+					<img src="/St.-Pauli/assets/images/shop.png" alt="shop image" />
+					<div
+						class="absolute inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-white bg-red-500 rounded-full -top-1 -right-1">
+						3
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+</header>
 
 <body class="mx-auto">
 	<div class="md:hidden carousel relative">
@@ -743,309 +737,281 @@
 
 	<div class="main-content socials ">
 		<div class="relative hidden md:flex justify-center">
-		  <img
-			class="mx-auto mt-12"
-			src="/St.-Pauli/assets/images/st_pauli_newsletter.jpg"
-			alt=""
-		  />
-		  <div class="absolute bottom-0 py-8 flex items-center justify-center w-1/2">
-			<input
-			  id="email"
-			  placeholder="Trage Deine E-Mail-Adresse ein"
-			  type="email"
-			/>
-		  </div>
+			<img class="mx-auto mt-12" src="/St.-Pauli/assets/images/st_pauli_newsletter.jpg" alt="" />
+			<div class="absolute bottom-0 py-8 flex items-center justify-center w-1/2">
+				<input id="email" placeholder="Trage Deine E-Mail-Adresse ein" type="email" />
+			</div>
 		</div>
-		<div class="relative md:hidden">
-		  <img
-			class="mx-auto"
-			src="/St.-Pauli/assets/images/pauli-newsletter2.jpg"
-			alt=""
-		  />
-		  <div
-			class="absolute md:bottom-0 bottom-4 flex items-center justify-center w-full"
-		  >
-			<input
-			  class="w-1/3"
-			  id="email"
-			  placeholder="Trage Deine E-Mail-Adresse ein"
-			  type="email"
-			/>
-		  </div>
+		<div class="relative md:hidden mx-2">
+			<img class="mx-auto" src="/St.-Pauli/assets/images/pauli-newsletter2.jpg" alt="" />
+			<div class="absolute md:bottom-0 bottom-4 flex items-center justify-center w-full">
+				<input class="w-1/3" id="email" placeholder="Trage Deine E-Mail-Adresse ein" type="email" />
+			</div>
 		</div>
 		<div>
-		  <div class="relative">
-			<p class="bg-text t text-center">INSTAGRAM SOCIAL MEDIA</p>
-			<div
-			  class="text-sm md:text-4xl absolute bottom-0 left-0 w-full py-4 md:py-12 flex items-center justify-center"
-			>
-			  <i class="fab fa-instagram"></i>
-			  <span class="mx-5">#DIESTRASSETRAEGTSTPAULI</span>
+			<div class="relative mt-5">
+				<p class="bg-text t text-center">INSTAGRAM SOCIAL MEDIA</p>
+				<div
+					class="text-2xl md:text-4xl absolute bottom-0 left-0 w-full py-4 md:py-12 flex items-center justify-center">
+					<i class="fab fa-instagram"></i>
+					<span class="mx-5">#DIESTRASSETRAEGTSTPAULI</span>
+				</div>
 			</div>
-		  </div>
-		  <ul class="flex justify-around">
-			<li>
-			  <img src="/St.-Pauli/assets/images/socialcarousel1.png" alt="" />
-			</li>
-			<li>
-			  <img src="/St.-Pauli/assets/images/socialcarousel2.png" alt="" />
-			</li>
-			<li>
-			  <img src="/St.-Pauli/assets/images/socialcarousel3.png" alt="" />
-			</li>
-			<li class="md:flex hidden">
-			  <img src="/St.-Pauli/assets/images/socialcarousel4.png" alt="" />
-			</li>
-			<li class="md:flex hidden">
-			  <img src="/St.-Pauli/assets/images/socialcarousel5.png" alt="" />
-			</li>
-			<li class="md:flex hidden">
-			  <img src="/St.-Pauli/assets/images/socialcarousel1.png" alt="" />
-			</li>
-			<li class="md:flex hidden">
-			  <img src="/St.-Pauli/assets/images/socialcarousel2.png" alt="" />
-			</li>
-		  </ul>
+			<ul class="flex justify-around mobile-stick">
+				<li class="mx-2">
+					<img src="/St.-Pauli/assets/images/socialcarousel1.png" alt="" />
+				</li>
+				<li>
+					<img src="/St.-Pauli/assets/images/socialcarousel2.png" alt="" />
+				</li>
+				<li class="mx-2">
+					<img src="/St.-Pauli/assets/images/socialcarousel3.png" alt="" />
+				</li>
+				<li class="md:flex hidden">
+					<img src="/St.-Pauli/assets/images/socialcarousel4.png" alt="" />
+				</li>
+				<li class="md:flex hidden">
+					<img src="/St.-Pauli/assets/images/socialcarousel5.png" alt="" />
+				</li>
+				<li class="md:flex hidden">
+					<img src="/St.-Pauli/assets/images/socialcarousel1.png" alt="" />
+				</li>
+				<li class="md:flex hidden">
+					<img src="/St.-Pauli/assets/images/socialcarousel2.png" alt="" />
+				</li>
+			</ul>
 		</div>
 
-		 <div class="partners mt-12 text-center p-4 md:hidden">
-        <span class="text-3xl">PARTNER</span>
-        <div class="flex items-center justify-center">
-          <div class="grid grid-cols-6 gap-2">
-            <div
-              class="col-span-6 bg-zinc-800 flex justify-center items-center"
-            >
-              <img class="p-3" src="/St.-Pauli/assets/images/congstar_logo.png" alt="" />
-            </div>
+		<div class="partners mt-12 text-center p-4 md:hidden">
+			<span class="text-3xl">PARTNER</span>
+			<div class="flex items-center justify-center">
+				<div class="grid grid-cols-6 gap-2">
+					<div class="col-span-6 bg-zinc-800 flex justify-center items-center">
+						<img class="p-3" src="/St.-Pauli/assets/images/congstar_logo.png" alt="" />
+					</div>
 
-            <div
-              class="col-span-2 bg-zinc-800 flex justify-center items-center"
-            >
-              <img class="p-3" src="/St.-Pauli/assets/images/FollowFood.png" alt="" />
-            </div>
-            <div
-              class="col-span-2 bg-zinc-800 flex justify-center items-center"
-            >
-              <img class="p-3" src="/St.-Pauli/assets/images/Di!y.png" alt="" />
-            </div>
-            <div
-              class="col-span-2 bg-zinc-800 flex justify-center items-center"
-            >
-              <img class="p-3" src="/St.-Pauli/assets/images/Astra.png" alt="" />
-            </div>
-            <div
-              class="col-span-2 bg-zinc-800 flex justify-center items-center"
-            >
-              <img class="p-3" src="/St.-Pauli/assets/images/Levi's.png" alt="" />
-            </div>
+					<div class="col-span-2 bg-zinc-800 flex justify-center items-center">
+						<img class="p-3" src="/St.-Pauli/assets/images/FollowFood.png" alt="" />
+					</div>
+					<div class="col-span-2 bg-zinc-800 flex justify-center items-center">
+						<img class="p-3" src="/St.-Pauli/assets/images/Di!y.png" alt="" />
+					</div>
+					<div class="col-span-2 bg-zinc-800 flex justify-center items-center">
+						<img class="p-3" src="/St.-Pauli/assets/images/Astra.png" alt="" />
+					</div>
+					<div class="col-span-2 bg-zinc-800 flex justify-center items-center">
+						<img class="p-3" src="/St.-Pauli/assets/images/Levi's.png" alt="" />
+					</div>
 
-            <div
-              class="col-span-2 bg-zinc-800 flex justify-center items-center"
-            >
-              <img class="p-3" src="/St.-Pauli/assets/images/Bwin.png" alt="" />
-            </div>
-            <div
-              class="col-span-2 bg-zinc-800 flex justify-center items-center"
-            >
-              <img class="p-3" src="/St.-Pauli/assets/images/Licht.png" alt="" />
-            </div>
-            <div
-              class="col-span-2 bg-zinc-800 flex justify-center items-center"
-            >
-              <img class="p-3" src="/St.-Pauli/assets/images/Edeka.png" alt="" />
-            </div>
-            <div class="col-span-4">
-              <img src="/St.-Pauli/assets/images/partnersky.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
+					<div class="col-span-2 bg-zinc-800 flex justify-center items-center">
+						<img class="p-3" src="/St.-Pauli/assets/images/Bwin.png" alt="" />
+					</div>
+					<div class="col-span-2 bg-zinc-800 flex justify-center items-center">
+						<img class="p-3" src="/St.-Pauli/assets/images/Licht.png" alt="" />
+					</div>
+					<div class="col-span-2 bg-zinc-800 flex justify-center items-center">
+						<img class="p-3" src="/St.-Pauli/assets/images/Edeka.png" alt="" />
+					</div>
+					<div class="col-span-4">
+						<img src="/St.-Pauli/assets/images/partnersky.png" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="partners mt-12 text-center p-12 hidden md:block">
-		  <span class="text-4xl">PARTNER</span>
-		  <div class="flex items-center justify-center">
-			<div class="grid grid-cols-7 gap-2">
-			  <div
-				class="zoom-container col-span-5 flex justify-center items-center"
-			  >
-				<img
-				  class="zoom-in"
-				  src="../St.-Pauli/assets/images/congstar_logo.png"
-				  alt=""
-				/>
-			  </div>
-			  <div class="col-span-2">
-				<img
-				  class="w-full"
-				  src="../St.-Pauli/assets/images/partnersky.png"
-				  alt=""
-				/>
-			  </div>
-			  <div class="zoom-container flex justify-center items-center">
-				<img class="zoom-in" src="/St.-Pauli/assets/images/FollowFood.png" alt="" />
-			  </div>
-			  <div class="zoom-container flex justify-center items-center">
-				<img class="zoom-in" src="/St.-Pauli/assets/images/Di!y.png" alt="" />
-			  </div>
-			  <div class="zoom-container p-12 flex justify-center items-center">
-				<img class="zoom-in" src="/St.-Pauli/assets/images/Astra.png" alt="" />
-			  </div>
-			  <div class="zoom-container flex justify-center items-center">
-				<img class="zoom-in" src="/St.-Pauli/assets/images/Levi's.png" alt="" />
-			  </div>
-			  <div class="zoom-container flex justify-center items-center">
-				<img class="zoom-in" src="/St.-Pauli/assets/images/Edeka.png" alt="" />
-			  </div>
-			  <div class="zoom-container flex justify-center items-center">
-				<img class="zoom-in" src="/St.-Pauli/assets/images/Bwin.png" alt="" />
-			  </div>
-			  <div class="zoom-container flex justify-center items-center">
-				<img class="zoom-in" src="/St.-Pauli/assets/images/Licht.png" alt="" />
-			  </div>
+			<span class="text-4xl">PARTNER</span>
+			<div class="flex items-center justify-center">
+				<div class="grid grid-cols-7 gap-2">
+					<div class="zoom-container col-span-5 flex justify-center items-center">
+						<img class="zoom-in" src="../St.-Pauli/assets/images/congstar_logo.png" alt="" />
+					</div>
+					<div class="col-span-2">
+						<img class="w-full" src="../St.-Pauli/assets/images/partnersky.png" alt="" />
+					</div>
+					<div class="zoom-container flex justify-center items-center">
+						<img class="zoom-in" src="/St.-Pauli/assets/images/FollowFood.png" alt="" />
+					</div>
+					<div class="zoom-container flex justify-center items-center">
+						<img class="zoom-in" src="/St.-Pauli/assets/images/Di!y.png" alt="" />
+					</div>
+					<div class="zoom-container p-12 flex justify-center items-center">
+						<img class="zoom-in" src="/St.-Pauli/assets/images/Astra.png" alt="" />
+					</div>
+					<div class="zoom-container flex justify-center items-center">
+						<img class="zoom-in" src="/St.-Pauli/assets/images/Levi's.png" alt="" />
+					</div>
+					<div class="zoom-container flex justify-center items-center">
+						<img class="zoom-in" src="/St.-Pauli/assets/images/Edeka.png" alt="" />
+					</div>
+					<div class="zoom-container flex justify-center items-center">
+						<img class="zoom-in" src="/St.-Pauli/assets/images/Bwin.png" alt="" />
+					</div>
+					<div class="zoom-container flex justify-center items-center">
+						<img class="zoom-in" src="/St.-Pauli/assets/images/Licht.png" alt="" />
+					</div>
+				</div>
 			</div>
-		  </div>
 		</div>
-	  </div>
+	</div>
 	<script src="/St.-Pauli/js/script.js"></script>
 </body>
-<footer class="p-16">
-    <div class="ml-16">
-      <div class="hidden md:flex justify-center items-center">
-        <div class="grid grid-cols-5 gap-10 mt-5">
-          <div class="grid gap-2 ">
-            <h4>NOCH FRAGEN?</h4>
-            <p><i class="fas fa-envelope"></i> info@fcsp-shop.com</p>
-            <p><i class="fas fa-phone"></i> 040 317 874 888</p>
-            <p><i class="fas fa-clock"></i> Mo - Fr 10 - 17:00 Uhr</p>
-          </div>
-          <div class="grid gap-2 ">
-            <h4>SICHER BEZAHLEN</h4>
-            <div class="grid grid-cols-3 gap-2">
-              <img src="/St.-Pauli/assets/images/paypal.png" alt="" />
-              <img src="/St.-Pauli/assets/images/visa.png" alt="" />
-              <img src="/St.-Pauli/assets/images/mastercard.png" alt="" />
-              <img src="/St.-Pauli/assets/images/elv.png" alt="" />
-            </div>
-          </div>
-          <div class="grid gap-2 ">
-            <h4>UNSERE STORES</h4>
-            <p>Harald-Stender-Platz 1</p>
-            <p>20359 Sankt Pauli</p>
-            <p>Mo - Fr 10 - 17:00 Uhr</p>
-          </div>
-          <div class="flex items-end">
-            <div class="grid grid-cols-1 gap-2 ">
-              <p>Reeperbahn 63-65</p>
-              <p>20359 Hamburg</p>
-              <p>Mo - Fr 10 - 17:00 Uhr</p>
-            </div>
-          </div>
-          <div class="grid gap-2 ">
-            <h4>FC ST. PAULI</h4>
-            <p>AGB</p>
-            <p>Datenschutz</p>
-            <p>Impressum</p>
-          </div>
-          <div class="grid gap-2 ">
-            <h4>FCSP-SHOPS</h4>
-            <p>Die Shops</p>
-            <p>Öffnungszeiten</p>
-            <p>Anfahrt</p>
-          </div>
-          <div class="grid gap-2 ">
-            <h4>FANS & VIERTEL</h4>
-            <p>Fanladen</p>
-            <p>Podcast</p>
-            <p>Stadtteilführung</p>
-          </div>
-          <div class="grid gap-2 ">
-            <h4>FCSP</h4>
-            <p>Team</p>
-            <p>Rabauken</p>
-            <p>Museum</p>
-          </div>
-          <div class="grid gap-2 ">
-            <h4>HILFE</h4>
-            <p>Bezahlung & Versand</p>
-            <p>Rücksendung & Retouren</p>
-            <p>FAQ</p>
-          </div>
-          <div class="flex items-end">
-            <div class="grid grid-cols-2 gap-2">
-              <img src="/St.-Pauli/assetsimages/St. Pauli.png" alt="" />
-              <img src="/St.-Pauli/assetsimages/Totenkopf_Weiss.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<footer class="">
+	<div class="ml-16 p-16 hidden md:flex">
+		<div class="hidden md:flex justify-center items-center">
+			<div class="grid grid-cols-5 gap-10 mt-5">
+				<div class="grid gap-2 ">
+					<h4>NOCH FRAGEN?</h4>
+					<p><i class="fas fa-envelope"></i> info@fcsp-shop.com</p>
+					<p><i class="fas fa-phone"></i> 040 317 874 888</p>
+					<p><i class="fas fa-clock"></i> Mo - Fr 10 - 17:00 Uhr</p>
+				</div>
+				<div class="grid gap-2 ">
+					<h4>SICHER BEZAHLEN</h4>
+					<div class="grid grid-cols-3 gap-2">
+						<img src="/St.-Pauli/assets/images/paypal.png" alt="" />
+						<img src="/St.-Pauli/assets/images/visa.png" alt="" />
+						<img src="/St.-Pauli/assets/images/mastercard.png" alt="" />
+						<img src="/St.-Pauli/assets/images/elv.png" alt="" />
+					</div>
+				</div>
+				<div class="grid gap-2 ">
+					<h4>UNSERE STORES</h4>
+					<p>Harald-Stender-Platz 1</p>
+					<p>20359 Sankt Pauli</p>
+					<p>Mo - Fr 10 - 17:00 Uhr</p>
+				</div>
+				<div class="flex items-end">
+					<div class="grid grid-cols-1 gap-2 ">
+						<p>Reeperbahn 63-65</p>
+						<p>20359 Hamburg</p>
+						<p>Mo - Fr 10 - 17:00 Uhr</p>
+					</div>
+				</div>
+				<div class="grid gap-2 ">
+					<h4>FC ST. PAULI</h4>
+					<p>AGB</p>
+					<p>Datenschutz</p>
+					<p>Impressum</p>
+				</div>
+				<div class="grid gap-2 ">
+					<h4>FCSP-SHOPS</h4>
+					<p>Die Shops</p>
+					<p>Öffnungszeiten</p>
+					<p>Anfahrt</p>
+				</div>
+				<div class="grid gap-2 ">
+					<h4>FANS & VIERTEL</h4>
+					<p>Fanladen</p>
+					<p>Podcast</p>
+					<p>Stadtteilführung</p>
+				</div>
+				<div class="grid gap-2 ">
+					<h4>FCSP</h4>
+					<p>Team</p>
+					<p>Rabauken</p>
+					<p>Museum</p>
+				</div>
+				<div class="grid gap-2 ">
+					<h4>HILFE</h4>
+					<p>Bezahlung & Versand</p>
+					<p>Rücksendung & Retouren</p>
+					<p>FAQ</p>
+				</div>
+				<div class="flex items-end">
+					<div class="grid grid-cols-2 gap-2">
+						<img src="/St.-Pauli/assetsimages/St. Pauli.png" alt="" />
+						<img src="/St.-Pauli/assetsimages/Totenkopf_Weiss.png" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <div class="md:hidden justify-center items-center">
-      <div class="grid grid-cols-6 gap-16 mt-5">
-        <div class="col-span-3 whitespace-nowrap">
-          <h4>NOCH FRAGEN?</h4>
-          <p><i class="fas fa-envelope mr-2"></i>info@fcsp-shop.com</p>
-          <p><i class="fas fa-phone mr-2"></i>040 317 874 888</p>
-          <p><i class="fas fa-clock mr-2"></i>Mo - Fr 10 - 17:00 Uhr</p>
-        </div>
-        <div class="col-span-3 whitespace-nowrap">
-          <h4>SICHER BEZAHLEN</h4>
-          <div class="grid grid-cols-3 gap-2">
-            <img src="/St.-Pauli/assets/images/paypal.png" alt="" />
-            <img src="/St.-Pauli/assets/images/visa.png" alt="" />
-            <img src="/St.-Pauli/assets/images/mastercard.png" alt="" />
-            <img src="/St.-Pauli/assets/images/elv.png" alt="" />
-          </div>
-        </div>
-        <div class="col-span-3 whitespace-nowrap">
-          <h4>UNSERE STORES</h4>
-          <p>Harald-Stender-Platz 1</p>
-          <p>20359 Sankt Pauli</p>
-          <p>Mo - Fr 10 - 17:00 Uhr</p>
-        </div>
-        <div class="flex items-end col-span-3">
-          <div class="grid grid-cols-1 whitespace-nowrap">
-            <p>Reeperbahn 63-65</p>
-            <p>20359 Hamburg</p>
-            <p>Mo - Fr 10 - 17:00 Uhr</p>
-          </div>
-        </div>
-        <div class="col-span-3 whitespace-nowrap">
-          <h4>FC ST. PAULI</h4>
-          <p>AGB</p>
-          <p>Datenschutz</p>
-          <p>Impressum</p>
-        </div>
-        <div class="col-span-3 whitespace-nowrap">
-          <h4>FCSP-SHOPS</h4>
-          <p>Die Shops</p>
-          <p>Öffnungszeiten</p>
-          <p>Anfahrt</p>
-        </div>
-        <div class="col-span-3 whitespace-nowrap">
-          <h4>FANS & VIERTEL</h4>
-          <p>Fanladen</p>
-          <p>Podcast</p>
-          <p>Stadtteilführung</p>
-        </div>
-        <div class="col-span-3 whitespace-nowrap">
-          <h4>FCSP</h4>
-          <p>Team</p>
-          <p>Rabauken</p>
-          <p>Museum</p>
-        </div>
-        <div class="col-span-3 whitespace-nowrap">
-          <h4>HILFE</h4>
-          <p>Bezahlung & Versand</p>
-          <p>Rücksendung & Retouren</p>
-          <p>FAQ</p>
-        </div>
-        <div class="flex items-end col-span-3">
-          <div class="grid grid-cols-2 gap-2">
-            <img src="/St.-Pauli/assetsimages/St. Pauli.png" alt="" />
-            <img src="/St.-Pauli/assetsimages/Totenkopf_Weiss.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+	<div class="md:hidden justify-center items-center p-4">
+		<div class="grid grid-cols-6 gap-16 mt-5">
+			<div class="col-span-3 whitespace-nowrap">
+				<h4>NOCH FRAGEN?</h4>
+				<p><i class="fas fa-envelope mr-2"></i>info@fcsp-shop.com</p>
+				<p><i class="fas fa-phone mr-2"></i>040 317 874 888</p>
+				<p><i class="fas fa-clock mr-2"></i>Mo - Fr 10 - 17:00 Uhr</p>
+			</div>
+			<div class="col-span-3 whitespace-nowrap">
+				<h4>SICHER BEZAHLEN</h4>
+				<div class="grid grid-cols-3 gap-2">
+					<img src="/St.-Pauli/assets/images/paypal.png" alt="" />
+					<img src="/St.-Pauli/assets/images/visa.png" alt="" />
+					<img src="/St.-Pauli/assets/images/mastercard.png" alt="" />
+					<img src="/St.-Pauli/assets/images/elv.png" alt="" />
+				</div>
+			</div>
+			<div class="col-span-3 whitespace-nowrap">
+				<h4>UNSERE STORES</h4>
+				<p>Harald-Stender-Platz 1</p>
+				<p>20359 Sankt Pauli</p>
+				<p>Mo - Fr 10 - 17:00 Uhr</p>
+			</div>
+			<div class="flex items-end col-span-3">
+				<div class="grid grid-cols-1 whitespace-nowrap">
+					<p>Reeperbahn 63-65</p>
+					<p>20359 Hamburg</p>
+					<p>Mo - Fr 10 - 17:00 Uhr</p>
+				</div>
+			</div>
+			<div class="col-span-3 whitespace-nowrap">
+				<h4>FC ST. PAULI</h4>
+				<p>AGB</p>
+				<p>Datenschutz</p>
+				<p>Impressum</p>
+			</div>
+			<div class="col-span-3 whitespace-nowrap">
+				<h4>FCSP-SHOPS</h4>
+				<p>Die Shops</p>
+				<p>Öffnungszeiten</p>
+				<p>Anfahrt</p>
+			</div>
+			<div class="col-span-3 whitespace-nowrap">
+				<h4>FANS & VIERTEL</h4>
+				<p>Fanladen</p>
+				<p>Podcast</p>
+				<p>Stadtteilführung</p>
+			</div>
+			<div class="col-span-3 whitespace-nowrap">
+				<h4>FCSP</h4>
+				<p>Team</p>
+				<p>Rabauken</p>
+				<p>Museum</p>
+			</div>
+			<div class="col-span-3 whitespace-nowrap">
+				<h4>HILFE</h4>
+				<p>Bezahlung & Versand</p>
+				<p>Rücksendung & Retouren</p>
+				<p>FAQ</p>
+			</div>
+			<div class="flex items-end col-span-3">
+				<div class="grid grid-cols-2 gap-2">
+					<img src="/St.-Pauli/assetsimages/St. Pauli.png" alt="" />
+					<img src="/St.-Pauli/assetsimages/Totenkopf_Weiss.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 </html>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		function toggleMarket() {
+		  const modal = document.getElementById('market');
+		  if (modal) {
+			modal.classList.remove('hidden');
+		  }
+		}
+
+
+	  });
+	  function closeModal() {
+		  const modal = document.getElementById('market');
+		  if (modal) {
+			modal.classList.add('hidden');
+		  }
+		}
+</script>
