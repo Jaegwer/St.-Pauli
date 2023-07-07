@@ -15,6 +15,14 @@
 	<title>Document</title>
 </head>
 <header>
+	<div id="market" class="hidden absolute">
+		<div id="myModal" class="modal hidden fixed inset-0 bg-gray-500 bg-opacity-75 flex items-start justify-end">
+			<div class="modal-content bg-black w-128 max-h-screen h-full grid ">
+				<button onclick="closeModal()" id="closeModal" class="justify-self-end text-white">X</button>
+			  <img src="/St.-Pauli/assets/images/Gruppe 173169.png" alt="">
+			</div>
+		  </div>
+	</div>
 	<div class="text-center text-white">
 		<p>GRATIS VERSAND AB EINEN BESTELLWERT VON 60 €</p>
 	</div>
@@ -44,7 +52,7 @@
 					<a>
 						<img src="/St.-Pauli/assets/images/search-nav.png" alt="" />
 					</a>
-					<button class="ml-5">
+					<button onclick="toggleMarket" class="ml-5">
 						<img src="/St.-Pauli/assets/images/shop.png" alt="" />
 					</button>
 

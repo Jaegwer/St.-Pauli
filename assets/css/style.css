@@ -345,3 +345,6 @@ font-style: normal;
   .mobile-stick{
 	margin-top: -0.9rem;
   }
+  #myNav{
+	z-index: 100;
+  }

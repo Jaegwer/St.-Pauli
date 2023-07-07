@@ -41,6 +41,10 @@ function toggleDropdown() {
 	var mobileNav = document.getElementById("myNav");
 	mobileNav.classList.toggle("hidden");
  }
+ function toggleMarket() {
+	var mobileMarket = document.getElementById("market");
+	mobileMarket.classList.toggle("hidden");
+ }
 
 
 
