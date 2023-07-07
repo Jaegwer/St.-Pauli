@@ -68,18 +68,3 @@ function toggleDropdown() {
 	// Event listeners for mouseover and mouseout on the target element
 	targetElement.addEventListener('mouseover', toggleOtherElementClass);
 	targetElement.addEventListener('mouseout', toggleOtherElementClass);
-	document.addEventListener('DOMContentLoaded', function() {
-		function toggleMarket() {
-		  const modal = document.getElementById('market');
-		  if (modal) {
-			modal.classList.remove('hidden');
-		  }
-		}
-
-		function closeModal() {
-		  const modal = document.getElementById('closeModal');
-		  if (modal) {
-			modal.classList.add('hidden');
-		  }
-		}
-	  });
