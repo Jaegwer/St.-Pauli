@@ -51,7 +51,7 @@
 					<a>
 						<img src="/St.-Pauli/assets/images/search-nav.png" alt="" />
 					</a>
-					<button onclick="toggleMarket" class="ml-5">
+					<button onclick="toggleMarket()" class="ml-5">
 						<img src="/St.-Pauli/assets/images/shop.png" alt="" />
 					</button>
 
@@ -888,12 +888,13 @@
 		  }
 		}
 
-		function closeModal() {
+
+	  });
+	  function closeModal() {
 			console.log('fddf');
 		  const modal = document.getElementById('market');
 		  if (modal) {
 			modal.classList.add('hidden');
 		  }
 		}
-	  });
 </script>
