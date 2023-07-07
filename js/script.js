@@ -37,7 +37,10 @@ function toggleDropdown() {
 
   toggleDropdown();
 }
-
+ function toggleNav() {
+	var mobileNav = document.getElementById("myNav");
+	mobileNav.classList.toggle("hidden");
+ }
 
 
 
