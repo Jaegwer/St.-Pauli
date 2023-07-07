@@ -342,3 +342,6 @@ font-style: normal;
   .custom-dropdown .dropdown-menu .dropdown-item .flag-icon {
     margin-right: 5px;
   }
+  .mobile-stick{
+	margin-top: -0.9rem;
+  }

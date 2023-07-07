@@ -23,6 +23,9 @@
     <title>Document</title>
   </head>
   <header>
+	<div id="myNav" class="absolute hidden">
+		<img src="/St.-Pauli/assets/images/mobile-nav.png" alt="">
+	</div>
     <div class="text-center text-white">
       <p>GRATIS VERSAND AB EINEN BESTELLWERT VON 60 €</p>
     </div>
@@ -186,9 +189,7 @@
 
   <body class="mx-auto">
     <div class="md:hidden carousel relative">
-		<div id="myNav" class="absolute hidden">
-			<img src="/St.-Pauli/assets/images/mobile-nav.png" alt="">
-		</div>
+
       <img class="w-auto h-64" src="/St.-Pauli/assets/images/carousel.png" alt="" />
       <div
         class="absolute bottom-0 left-0 w-full bg-opacity-50 py-4 flex flex-col items-center justify-center"
@@ -748,7 +749,7 @@
           />
         </div>
       </div>
-      <div class="relative md:hidden">
+      <div class="relative md:hidden mx-2">
         <img
           class="mx-auto"
           src="/St.-Pauli/assets/images/pauli-newsletter2.jpg"
@@ -766,23 +767,23 @@
         </div>
       </div>
       <div>
-        <div class="relative">
+        <div class="relative mt-5">
           <p class="bg-text t text-center">INSTAGRAM SOCIAL MEDIA</p>
           <div
-            class="text-2xl md:text-4xl absolute bottom-0 left-0 w-full py-2 md:py-12 flex items-center justify-center"
+            class="text-2xl md:text-4xl absolute bottom-0 left-0 w-full py-4 md:py-12 flex items-center justify-center"
           >
             <i class="fab fa-instagram"></i>
             <span class="mx-5">#DIESTRASSETRAEGTSTPAULI</span>
           </div>
         </div>
-        <ul class="flex justify-around">
-          <li>
+        <ul class="flex justify-around mobile-stick">
+          <li class="mx-2">
             <img src="/St.-Pauli/assets/images/socialcarousel1.png" alt="" />
           </li>
           <li>
             <img src="/St.-Pauli/assets/images/socialcarousel2.png" alt="" />
           </li>
-          <li>
+          <li class="mx-2">
             <img src="/St.-Pauli/assets/images/socialcarousel3.png" alt="" />
           </li>
           <li class="md:flex hidden">
@@ -899,8 +900,8 @@
     </div>
 	<script src="/St.-Pauli/js/script.js"></script>
   </body>
-  <footer class="p-16">
-    <div class="ml-16">
+  <footer class="">
+    <div class="ml-16 p-16 hidden md:flex">
       <div class="hidden md:flex justify-center items-center">
         <div class="grid grid-cols-5 gap-10 mt-5">
           <div class="grid gap-2 ">
@@ -971,7 +972,7 @@
       </div>
     </div>
 
-    <div class="md:hidden justify-center items-center">
+    <div class="md:hidden justify-center items-center p-4">
       <div class="grid grid-cols-6 gap-16 mt-5">
         <div class="col-span-3 whitespace-nowrap">
           <h4>NOCH FRAGEN?</h4>
