@@ -70,14 +70,14 @@ function toggleDropdown() {
 	targetElement.addEventListener('mouseout', toggleOtherElementClass);
 	document.addEventListener('DOMContentLoaded', function() {
 		function toggleMarket() {
-		  const modal = document.getElementById('Market');
+		  const modal = document.getElementById('market');
 		  if (modal) {
 			modal.classList.remove('hidden');
 		  }
 		}
 
 		function closeModal() {
-		  const modal = document.getElementById('market');
+		  const modal = document.getElementById('closeModal');
 		  if (modal) {
 			modal.classList.add('hidden');
 		  }
